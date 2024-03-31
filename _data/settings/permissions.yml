@@ -62,3 +62,9 @@ items:
     name: GalShapira
     access:
       - all
+  - username: eilaKappAmir
+    name: Eila Kapp Amir
+    access:
+      - events
+      - pages
+      - seo
