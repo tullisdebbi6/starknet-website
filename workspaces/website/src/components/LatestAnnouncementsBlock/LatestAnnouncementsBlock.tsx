@@ -31,7 +31,7 @@ const LatestAnnouncementsBlock = ({ list }: NavbarStickyBannerProps) => {
       </Heading>
       <Box display="flex" flexDir={{ base: "row", lg: "column" }} gap={4}>
         {list.map((item) => (
-          <Box mb={6}>
+          <Box mb={6} id={item.buttonLink + item.text}>
             <Image src={item.image} alt={item.image} borderRadius={8} />
             <Text fontSize="14px" fontWeight={600} mt={3} mb={2}>
               {item.text}
