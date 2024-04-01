@@ -5,7 +5,7 @@ import CloseIcon from "@ui/Icons/CloseIcon/CloseIcon";
 import ArrowRight from "./ArrowRight/ArrowRight";
 import { Button } from "@ui/Button";
 import { useLocalStorage } from "usehooks-ts";
-import { gtmEvent } from "functions/[[route]]";
+import { gtmEvent } from "src/utils/utils";
 
 const ProvisionsPopup = () => {
   const isSsr = typeof window === "undefined";

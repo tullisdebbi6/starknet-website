@@ -1,7 +1,7 @@
 import { Box, Text, Image, Heading } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
 import { LatestAnnouncements } from "@starknet-io/cms-data/src/settings/latest-announcements";
-import { gtmEvent } from "functions/[[route]]";
+import { gtmEvent } from "src/utils/utils";
 
 interface NavbarStickyBannerProps {
   readonly list: readonly LatestAnnouncements[];
@@ -17,8 +17,8 @@ const LatestAnnouncementsBlock = ({ list }: NavbarStickyBannerProps) => {
       width={{ base: "100%", lg: "225px" }}
       mt={{ base: 6, lg: "unset" }}
       mb={{ base: 6, lg: "unset" }}
-      p={3}
-      gap={6}
+      p={{ base: 4, lg: 3 }}
+      gap={{ lg: 6 }}
       backgroundColor="surface"
       borderRadius={8}
       zIndex={{ base: "unset", lg: 100 }}
@@ -34,15 +34,20 @@ const LatestAnnouncementsBlock = ({ list }: NavbarStickyBannerProps) => {
       >
         Latest announcements
       </Heading>
-      <Box display="flex" flexDir={{ base: "row", lg: "column" }} gap={4}>
+      <Box
+        display="flex"
+        flexDir={{ sm: "row", md: "row", xs: "column", lg: "column" }}
+        gap={4}
+        justifyContent={{ base: "space-between", lg: "unset" }}
+      >
         {list.map((item) => (
           <Box key={item.buttonLink + item.text}>
             <Image
               src={item.image}
               alt={item.image}
               borderRadius={8}
-              width="200px"
-              height="100px"
+              width={{ base: "375px", lg: "200px" }}
+              height={{ base: "186px", lg: "100px" }}
             />
             <Text
               fontSize={14}

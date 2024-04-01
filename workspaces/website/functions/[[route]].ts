@@ -114,5 +114,3 @@ export const onRequest: PagesFunction<{}> = async (context) => {
     return new Response("Internal Error", { status: 500 });
   });
 };
-export const gtmEvent = (target: string) =>
-  window.gtag?.("event", target, { event_category: "engagement" });
