@@ -1,1 +1,1 @@
-export { default as Page } from "./components/LivePreviewPage";
+export { default as Page } from "./(components)/LivePreviewPage";

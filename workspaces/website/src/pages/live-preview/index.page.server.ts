@@ -2,7 +2,7 @@ import { getCategories } from "@starknet-io/cms-data/src/categories";
 import { getTopics } from "@starknet-io/cms-data/src/topics";
 import { PageContextServer } from "src/renderer/types";
 import { getDefaultPageContext } from "src/renderer/helpers";
-import { Props } from "./components/LivePreviewPage";
+import { Props } from "./(components)/LivePreviewPage";
 import { getRoadmapVersions } from "@starknet-io/cms-data/src/roadmap";
 import { getLatestAnnouncements } from "@starknet-io/cms-data/src/settings/latest-announcements";
 
