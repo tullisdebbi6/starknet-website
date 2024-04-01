@@ -101,11 +101,12 @@ export function PostPage({
   }, [env?.ALGOLIA_APP_ID, env?.ALGOLIA_SEARCH_API_KEY]);
 
   return (
-    <Container py="0" pb="16" maxW={"1624px"}>
+    <Container py="0" pb="16" maxW={"1624px"} position="relative">
       <Grid
+        position="relative"
         gridTemplateAreas={{
-          base: '"breadcrumbs" "post"',
-          lg: '". breadcrumbs ." "timeline post ."',
+          base: '"breadcrumbs" "post" "latestAnnouncement"',
+          lg: '". breadcrumbs ." "timeline post latestAnnouncement"',
         }}
         gridTemplateColumns={{
           base: "1fr",
@@ -293,8 +294,11 @@ export function PostPage({
             </Flex>
           </Box>
         </Box>
+        <LatestAnnouncement
+          list={latestAnnouncements}
+          gridArea={"latestAnnouncement"}
+        />
       </Grid>
-
       <Divider mb={"96px"} mt={"80px"} />
 
       <Heading color="heading-navy-fg" marginBottom={"48px"} variant={"h4"}>
@@ -312,7 +316,6 @@ export function PostPage({
             locale: [locale],
           }}
         />
-        <LatestAnnouncement list={latestAnnouncements} />
         <RelatedSection post={post} topics={topics} />
       </InstantSearch>
     </Container>
