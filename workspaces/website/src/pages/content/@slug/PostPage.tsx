@@ -35,7 +35,6 @@ import algoliasearch from "algoliasearch";
 import { BlogCard } from "@ui/Blog/BlogCard";
 import { BlogHit } from "../PostsPage";
 import { BlogBreadcrumbs } from "@ui/Blog/BlogBreadcrumbs";
-import LatestAnnouncementsBlock from "@ui/LatestAnnouncementsBlock/LatestAnnouncementsBlock";
 import { LatestAnnouncements } from "@starknet-io/cms-data/src/settings/latest-announcements";
 import {
   FacebookShareButton,
@@ -47,6 +46,7 @@ import {
   AiFillLinkedin,
   AiOutlineTwitter,
 } from "react-icons/ai";
+import LatestAnnouncement from "@ui/LatestAnnouncement/LatestAnnouncement";
 
 /**
  * Export `Props` type.
@@ -312,9 +312,7 @@ export function PostPage({
             locale: [locale],
           }}
         />
-        {latestAnnouncements && (
-          <LatestAnnouncementsBlock list={latestAnnouncements} />
-        )}
+        <LatestAnnouncement list={latestAnnouncements} />
         <RelatedSection post={post} topics={topics} />
       </InstantSearch>
     </Container>

@@ -7,8 +7,10 @@ interface NavbarStickyBannerProps {
   readonly list: readonly LatestAnnouncements[];
 }
 
-const LatestAnnouncementsBlock = ({ list }: NavbarStickyBannerProps) => {
+const LatestAnnouncement = ({ list }: NavbarStickyBannerProps) => {
+  if (!list.filter(({ isActive }) => !isActive).length) return null;
   const onReadMore = () => gtmEvent("Latest_announcement_read_more");
+
   return (
     <Box
       position={{ base: "relative", lg: "fixed" }}
@@ -75,4 +77,4 @@ const LatestAnnouncementsBlock = ({ list }: NavbarStickyBannerProps) => {
   );
 };
 
-export default LatestAnnouncementsBlock;
+export default LatestAnnouncement;
