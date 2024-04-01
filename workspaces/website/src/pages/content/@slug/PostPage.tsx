@@ -188,8 +188,10 @@ export function PostPage(props: Props): JSX.Element {
                 {post.post_desc}
               </Heading>
             )}
-
-            <Divider mt="8px" mb="48px" />
+            <Flex alignItems={"center"} gap={"8px"}>
+              <SocialShare params={{ slug, locale }} />
+            </Flex>
+            <Divider mt={{ base: "56px", xl: "8px" }} mb="48px" />
 
             {post.post_type !== "article" && (
               <Flex mb={!post.blocks?.length ? "32px" : 0} direction="column">
@@ -219,7 +221,6 @@ export function PostPage(props: Props): JSX.Element {
                 </Flex>
               </Flex>
             )}
-
             {(post.blocks?.length ?? 0) > 0 && (
               <Flex direction="column" gap="32px" marginBottom={"96px"}>
                 {post.blocks?.map((block, i) => (
@@ -242,19 +243,15 @@ export function PostPage(props: Props): JSX.Element {
                 </Button>
               ))}
             </Flex>
-            <Flex gap={"24px"}>
-              <Flex alignItems={"center"} gap={"8px"}>
-                <SocialShare params={{ slug, locale }} />
-              </Flex>
-            </Flex>
+            <Flex gap={"24px"}></Flex>
           </Box>
         </Box>
       </Grid>
 
       <Divider mb={"96px"} mt={"80px"} />
 
-      <Heading color="heading-navy-fg" marginBottom={"48px"} variant={"h4"}>
-        {"May also interest you"}
+      <Heading color="heading-navy-fg" marginBottom="48px" variant="h4">
+        May also interest you
       </Heading>
 
       <InstantSearch

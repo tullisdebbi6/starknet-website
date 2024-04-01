@@ -1,30 +1,20 @@
 import { Flex, Icon, Text } from "@chakra-ui/react";
 import {
-  // FacebookShareButton,
   LinkedinShareButton,
   TwitterShareButton,
   TelegramShareButton,
 } from "react-share";
 import { FaTelegram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-// import { FaDiscord } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
 interface Props {
   readonly params: LocaleParams & {
     readonly slug: string;
   };
-  readonly env?: {
-    readonly ALGOLIA_INDEX: string;
-    readonly ALGOLIA_APP_ID: string;
-    readonly ALGOLIA_SEARCH_API_KEY: string;
-    readonly SITE_URL: string;
-  };
 }
-const SocialShare = ({ params: { slug, locale }, env }: Props) => {
-  const shareUrl = `${
-    env?.SITE_URL || "https://www.starknet.io"
-  }${locale}/content/${slug}`;
+const SocialShare = ({ params: { slug, locale } }: Props) => {
+  const shareUrl = `${import.meta.env.VITE_SITE_URL}${locale}/content/${slug}`;
   return (
     <Flex
       gap={"24px"}
@@ -41,7 +31,8 @@ const SocialShare = ({ params: { slug, locale }, env }: Props) => {
       >
         <TwitterShareButton url={shareUrl}>
           <Icon
-            boxSize="28px"
+            title="TwitterShareButton"
+            boxSize="22px"
             color="grey.coolText"
             _dark={{ color: "grey.morning" }}
             as={FaTwitter}
@@ -49,23 +40,16 @@ const SocialShare = ({ params: { slug, locale }, env }: Props) => {
         </TwitterShareButton>
         <TelegramShareButton url={shareUrl}>
           <Icon
-            boxSize="28px"
+            title="TelegramShareButton"
+            boxSize="22px"
             color="grey.coolText"
             _dark={{ color: "grey.morning" }}
             as={FaTelegram}
           />
         </TelegramShareButton>
-        {/* need to be discord */}
-        {/* <FacebookShareButton url={shareUrl}>
-          <Icon
-            boxSize="28px"
-            opacity={0.6}
-            color="text-hero-fg"
-            as={FaDiscord}
-          />
-        </FacebookShareButton> */}
         <LinkedinShareButton url={shareUrl}>
           <Icon
+            title="LinkedinShareButton"
             boxSize="28px"
             color="grey.coolText"
             _dark={{ color: "grey.morning" }}
