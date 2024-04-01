@@ -80,7 +80,12 @@ export interface MarkdownBlock {
 /**
  * Export `PostPage` component.
  */
-
+enum GridAreas {
+  BREADCRUMBS = "breadcrumbs",
+  POST = "post",
+  LATEST_ANNOUNCEMENT = "latestAnnouncement",
+  TIMELINE = "timeline",
+}
 export function PostPage({
   params: { slug, locale },
   categories,
@@ -105,8 +110,8 @@ export function PostPage({
       <Grid
         position="relative"
         gridTemplateAreas={{
-          base: '"breadcrumbs" "post" "latestAnnouncement"',
-          lg: '". breadcrumbs ." "timeline post latestAnnouncement"',
+          base: `"${GridAreas.BREADCRUMBS}" "${GridAreas.POST}" "${GridAreas.LATEST_ANNOUNCEMENT}"`,
+          lg: `". ${GridAreas.BREADCRUMBS} ." "${GridAreas.TIMELINE} ${GridAreas.POST} ${GridAreas.LATEST_ANNOUNCEMENT}"`,
         }}
         gridTemplateColumns={{
           base: "1fr",
@@ -115,7 +120,7 @@ export function PostPage({
         gridColumnGap={"105px"}
       >
         <BlogBreadcrumbs
-          gridArea={"breadcrumbs"}
+          gridArea={GridAreas.BREADCRUMBS}
           height={{
             base: "68px",
             lg: "118px",
@@ -128,7 +133,7 @@ export function PostPage({
         {!!post.toc && !isMobile ? (
           <Box
             alignSelf={"start"}
-            gridArea={"timeline"}
+            gridArea={GridAreas.TIMELINE}
             as={"aside"}
             role={"complementary"}
             position={"sticky"}
@@ -138,7 +143,7 @@ export function PostPage({
           </Box>
         ) : null}
 
-        <Box gridArea={"post"} overflow={"hidden"}>
+        <Box gridArea={GridAreas.POST} overflow={"hidden"}>
           <Box maxWidth="1024px">
             {post.post_type === "article" ? (
               <Box>
@@ -296,7 +301,7 @@ export function PostPage({
         </Box>
         <LatestAnnouncement
           list={latestAnnouncements}
-          gridArea={"latestAnnouncement"}
+          gridArea={GridAreas.LATEST_ANNOUNCEMENT}
         />
       </Grid>
       <Divider mb={"96px"} mt={"80px"} />

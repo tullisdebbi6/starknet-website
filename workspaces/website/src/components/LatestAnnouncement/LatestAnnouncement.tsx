@@ -2,16 +2,22 @@ import { Box, Text, Heading, FlexProps } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
 import { LatestAnnouncements } from "@starknet-io/cms-data/src/settings/latest-announcements";
 import { Image } from "@ui/ArticleCard/ArticleCard";
+import { useMemo } from "react";
 import { gtmEvent } from "src/utils/utils";
 
-interface NavbarStickyBannerProps extends FlexProps {
+interface LatestAnnouncementProps extends FlexProps {
   readonly list: readonly LatestAnnouncements[];
 }
 
-const LatestAnnouncement = ({ list, ...rest }: NavbarStickyBannerProps) => {
-  if (list.filter(({ isActive }) => !isActive).length) return null;
+const LatestAnnouncement = ({ list, ...rest }: LatestAnnouncementProps) => {
+  const LatestAnnouncementList = useMemo(
+    () => list.filter(({ isActive }) => isActive),
+    []
+  );
 
   const onReadMore = () => gtmEvent("Latest_announcement_read_more");
+
+  if (!LatestAnnouncementList.length) return null;
 
   return (
     <Box
@@ -41,17 +47,21 @@ const LatestAnnouncement = ({ list, ...rest }: NavbarStickyBannerProps) => {
       </Heading>
       <Box
         display="flex"
-        flexDir={{ sm: "row", md: "row", xs: "column", lg: "column" }}
+        // width="100%"
+        flexDir={{ base: "column", sm: "row", md: "row", lg: "column" }}
         gap={4}
         justifyContent={{ base: "space-between", lg: "unset" }}
       >
-        {list.map((item) => (
-          <Box key={item.buttonLink + item.text}>
+        {LatestAnnouncementList.map((item) => (
+          <Box
+            key={item.buttonLink + item.text}
+            width={{ base: "100%", md: "50%", lg: "200px" }}
+          >
             <Image
               url={item.image}
               imageAlt={item.image}
               borderRadius={8}
-              width={{ base: "375px", lg: "200px" }}
+              width={{ base: "100%", lg: "200px" }}
               height={{ base: "186px", lg: "100px" }}
             />
             <Text
