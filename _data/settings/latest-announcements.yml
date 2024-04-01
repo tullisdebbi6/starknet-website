@@ -1,10 +1,10 @@
   - isActive: true
-    image: public/assets/1_mrdbx-inf3bcska9lmnoya-1.png
+    image: https://www.starknet.io/assets/final-.jpeg
     text: What are onramps and cross rollup bridges?
     buttonText: See more
     buttonLink: /
   - isActive: true
-    image: public/assets/1_mrdbx-inf3bcska9lmnoya-1.png
+    image: https://www.starknet.io/assets/guide-image-3-.jpg
     text: What are onramps and cross rollup bridges?
     buttonText: See more
     buttonLink: /

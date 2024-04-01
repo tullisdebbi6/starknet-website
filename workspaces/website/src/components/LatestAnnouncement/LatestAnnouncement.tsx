@@ -53,18 +53,6 @@ const LatestAnnouncement = ({ list, ...rest }: NavbarStickyBannerProps) => {
               borderRadius={8}
               width={{ base: "375px", lg: "200px" }}
               height={{ base: "186px", lg: "100px" }}
-              sx={{
-                img: {
-                  aspectRatio: 16 / 9,
-                  filter: "blur(6px)",
-                  objectFit: "cover !important",
-                  transform: "scale(1.05)",
-                  transition: "transform 0.4s ease-in-out",
-                  width: "100%",
-                  minWidth: "100%",
-                  zIndex: -1,
-                },
-              }}
             />
             <Text
               fontSize={14}
