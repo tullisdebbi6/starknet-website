@@ -5,6 +5,7 @@ import { useMemo } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import { sha256 } from "js-sha256";
 import ClientOnly from "../ClientOnly";
+import { gtmEvent } from "functions/[[route]]";
 
 interface NavbarStickyBannerProps {
   text: string;
@@ -26,9 +27,6 @@ const NavbarStickyBanner = ({
     `isNavbarStickyBannerOpen_${hash}`,
     true
   );
-
-  const gtmEvent = (target: string) =>
-    window.gtag?.("event", target, { event_category: "engagement" });
 
   const onClose = () => {
     gtmEvent("Navbar_banner_close");

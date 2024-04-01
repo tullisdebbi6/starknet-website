@@ -1,16 +1,13 @@
 import { Box, Text, Image, Heading } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
-
 import { LatestAnnouncements } from "@starknet-io/cms-data/src/settings/latest-announcements";
+import { gtmEvent } from "functions/[[route]]";
 
 interface NavbarStickyBannerProps {
   readonly list: readonly LatestAnnouncements[];
 }
 
 const LatestAnnouncementsBlock = ({ list }: NavbarStickyBannerProps) => {
-  const gtmEvent = (target: string) =>
-    window.gtag?.("event", target, { event_category: "engagement" });
-
   const onReadMore = () => gtmEvent("Latest_announcement_read_more");
   return (
     <Box
