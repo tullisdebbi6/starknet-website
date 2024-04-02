@@ -82,8 +82,8 @@ export function PostPage({
 }: Props): JSX.Element {
   const postCategories = categories.filter((c) => post.category.includes(c.id));
   const videoId = post.post_type !== "article" ? post.video?.id : undefined;
-  const shareUrl = `${env?.SITE_URL}/content/${slug}`;
   const isMobile = useBreakpointValue({ base: true, lg: false });
+  const isTablet = useBreakpointValue({ base: true, xl: false });
   const searchClient = useMemo(() => {
     return algoliasearch(
       env?.ALGOLIA_APP_ID ?? "",
@@ -197,9 +197,11 @@ export function PostPage({
                 {post.post_desc}
               </Heading>
             )}
-            <Flex alignItems={"center"} gap={"8px"}>
-              <SocialShare params={{ slug, locale }} />
-            </Flex>
+            {isTablet && (
+              <Flex alignItems={"center"} gap={"8px"}>
+                <SocialShare params={{ slug, locale }} />
+              </Flex>
+            )}
             <Divider mt={{ base: "56px", xl: "8px" }} mb="48px" />
 
             {post.post_type !== "article" && (
@@ -255,10 +257,23 @@ export function PostPage({
             <Flex gap={"24px"}></Flex>
           </Box>
         </Box>
-        <LatestAnnouncement
-          list={latestAnnouncements}
-          gridArea={GridAreas.LATEST_ANNOUNCEMENT}
-        />
+        {!isTablet && (
+          <Box
+            gap={6}
+            gridArea={GridAreas.LATEST_ANNOUNCEMENT}
+            display="flex"
+            flexDirection="row"
+          >
+            <SocialShare params={{ slug, locale }} />
+            <LatestAnnouncement list={latestAnnouncements} />
+          </Box>
+        )}
+        {isTablet && (
+          <LatestAnnouncement
+            list={latestAnnouncements}
+            gridArea={GridAreas.LATEST_ANNOUNCEMENT}
+          />
+        )}
       </Grid>
       <Divider mb={"96px"} mt={"80px"} />
       <Heading color="heading-navy-fg" marginBottom="48px" variant="h4">
