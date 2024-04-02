@@ -101,9 +101,9 @@ export function PostPage({
         }}
         gridTemplateColumns={{
           base: "1fr",
-          lg: "240px 1fr 240px",
+          lg: "240px 1fr 300px",
         }}
-        gridColumnGap={"105px"}
+        gridColumnGap={{ base: "105px", xl: "40px", "2xl": "80px" }}
       >
         <BlogBreadcrumbs
           gridArea={GridAreas.BREADCRUMBS}
@@ -259,7 +259,7 @@ export function PostPage({
         </Box>
         {!isTablet && (
           <Box
-            gap={{ lg: 3, xl: 4, "2xl": 6 }}
+            gap={{ lg: 1, xl: 5, "2xl": 10 }}
             gridArea={GridAreas.LATEST_ANNOUNCEMENT}
             display="flex"
             flexDirection="row"

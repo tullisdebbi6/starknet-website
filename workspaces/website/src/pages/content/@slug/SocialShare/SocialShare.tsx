@@ -24,7 +24,7 @@ const SocialShare = ({ params: { slug, locale } }: Props) => {
       top={{ base: "unset", lg: 100 }}
       mt={1}
       height="fit-content"
-      left={{ base: "unset", lg: "calc(100% - 460px)" }}
+      left={{ base: "unset", lg: "calc(100% - 600px)" }}
     >
       <Text display={{ base: "unset", xl: "none" }}>Share this post:</Text>
 
