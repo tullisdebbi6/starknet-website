@@ -259,7 +259,7 @@ export function PostPage({
         </Box>
         {!isTablet && (
           <Box
-            gap={{ lg: 3, xl: 6 }}
+            gap={{ lg: 3, xl: 4, "2xl": 6 }}
             gridArea={GridAreas.LATEST_ANNOUNCEMENT}
             display="flex"
             flexDirection="row"
