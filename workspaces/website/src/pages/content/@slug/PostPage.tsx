@@ -10,7 +10,6 @@ import {
   Grid,
   HStack,
   Heading,
-  Icon,
   Img,
   useBreakpointValue,
 } from "@chakra-ui/react";
@@ -35,22 +34,9 @@ import algoliasearch from "algoliasearch";
 import { BlogCard } from "@ui/Blog/BlogCard";
 import { BlogHit } from "../PostsPage";
 import { BlogBreadcrumbs } from "@ui/Blog/BlogBreadcrumbs";
+import SocialShare from "./SocialShare/SocialShare";
 import { LatestAnnouncements } from "@starknet-io/cms-data/src/settings/latest-announcements";
-import {
-  FacebookShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
-} from "react-share";
-import {
-  AiFillFacebook,
-  AiFillLinkedin,
-  AiOutlineTwitter,
-} from "react-icons/ai";
 import LatestAnnouncement from "@ui/LatestAnnouncement/LatestAnnouncement";
-
-/**
- * Export `Props` type.
- */
 
 export interface Props {
   readonly params: LocaleParams & {
@@ -211,8 +197,10 @@ export function PostPage({
                 {post.post_desc}
               </Heading>
             )}
-
-            <Divider mt="8px" mb="48px" />
+            <Flex alignItems={"center"} gap={"8px"}>
+              <SocialShare params={{ slug, locale }} />
+            </Flex>
+            <Divider mt={{ base: "56px", xl: "8px" }} mb="48px" />
 
             {post.post_type !== "article" && (
               <Flex mb={!post.blocks?.length ? "32px" : 0} direction="column">
@@ -242,7 +230,6 @@ export function PostPage({
                 </Flex>
               </Flex>
             )}
-
             {(post.blocks?.length ?? 0) > 0 && (
               <Flex direction="column" gap="32px" marginBottom={"96px"}>
                 {post.blocks?.map((block, i) => (
@@ -265,38 +252,7 @@ export function PostPage({
                 </Button>
               ))}
             </Flex>
-            <Flex gap={"24px"}>
-              <Text>Share this post:</Text>
-
-              <Flex alignItems={"center"} gap={"8px"}>
-                <TwitterShareButton url={shareUrl}>
-                  <Icon
-                    boxSize="28px"
-                    opacity={0.6}
-                    color="text-hero-fg"
-                    as={AiOutlineTwitter}
-                  />
-                </TwitterShareButton>
-
-                <LinkedinShareButton url={shareUrl}>
-                  <Icon
-                    boxSize="28px"
-                    opacity={0.6}
-                    color="text-hero-fg"
-                    as={AiFillLinkedin}
-                  />
-                </LinkedinShareButton>
-
-                <FacebookShareButton url={shareUrl}>
-                  <Icon
-                    boxSize="28px"
-                    opacity={0.6}
-                    color="text-hero-fg"
-                    as={AiFillFacebook}
-                  />
-                </FacebookShareButton>
-              </Flex>
-            </Flex>
+            <Flex gap={"24px"}></Flex>
           </Box>
         </Box>
         <LatestAnnouncement
@@ -305,9 +261,8 @@ export function PostPage({
         />
       </Grid>
       <Divider mb={"96px"} mt={"80px"} />
-
-      <Heading color="heading-navy-fg" marginBottom={"48px"} variant={"h4"}>
-        {"May also interest you"}
+      <Heading color="heading-navy-fg" marginBottom="48px" variant="h4">
+        May also interest you
       </Heading>
 
       <InstantSearch
