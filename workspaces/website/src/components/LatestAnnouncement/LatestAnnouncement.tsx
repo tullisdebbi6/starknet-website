@@ -21,6 +21,7 @@ const LatestAnnouncement = ({ list, ...rest }: LatestAnnouncementProps) => {
 
   return (
     <Box
+      as="aside"
       position={{ base: "relative", lg: "sticky" }}
       top={{ base: "unset", lg: 100 }}
       height="fit-content"
@@ -46,26 +47,29 @@ const LatestAnnouncement = ({ list, ...rest }: LatestAnnouncementProps) => {
         Latest announcements
       </Heading>
       <Box
+        as="ul"
         display="flex"
-        // width="100%"
         flexDir={{ base: "column", sm: "row", md: "row", lg: "column" }}
         gap={4}
         justifyContent={{ base: "space-between", lg: "unset" }}
       >
         {LatestAnnouncementList.map((item) => (
           <Box
+            as="li"
+            textDecoration="none"
+            listStyleType="none"
             key={item.buttonLink + item.text}
             width={{ base: "100%", md: "50%", lg: "200px" }}
           >
             <Image
               url={item.image}
-              imageAlt={item.image}
+              imageAlt={item.text}
               borderRadius={8}
               width={{ base: "100%", lg: "200px" }}
               height={{ base: "186px", lg: "100px" }}
             />
             <Text
-              fontSize={14}
+              fontSize={{ base: 16, md: 14, lg: 14, xl: 14 }}
               mt={3}
               fontWeight={600}
               mb={2}
