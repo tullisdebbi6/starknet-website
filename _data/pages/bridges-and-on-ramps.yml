@@ -103,5 +103,11 @@ blocks:
         description: Send small amounts of L2 Sepolia ETH/STRK to an account address on
           Starknet Sepolia.
         twitter: https://twitter.com/StarknetFndn
+      - image: /assets/alchemy-logo-blue-gradient.png
+        title: Alchemy Starknet Sepolia Faucet
+        description: Get test tokens through the Alchemy Starknet Sepolia Faucet.
+        website_url: https://www.alchemy.com/faucets/starknet-sepolia
+        twitter: https://twitter.com/AlchemyPlatform
+        discord: https://discord.com/invite/alchemyplatform
     description: A faucet sends small amounts of L2 Sepolia ETH/STRK to an account
       address on Starknet Sepolia.
