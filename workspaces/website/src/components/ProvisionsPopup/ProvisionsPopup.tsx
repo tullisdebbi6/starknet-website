@@ -5,6 +5,7 @@ import CloseIcon from "@ui/Icons/CloseIcon/CloseIcon";
 import ArrowRight from "./ArrowRight/ArrowRight";
 import { Button } from "@ui/Button";
 import { useLocalStorage } from "usehooks-ts";
+import { gtmEvent } from "src/utils/utils";
 
 const ProvisionsPopup = () => {
   const isSsr = typeof window === "undefined";
@@ -13,10 +14,6 @@ const ProvisionsPopup = () => {
     "isProvisionsPopupOpen",
     !isSsr
   );
-
-  const gtmEvent = (target: string) =>
-    window.gtag?.("event", target, { event_category: "engagement" });
-
   const onClose = (event: React.MouseEvent) => {
     event.stopPropagation();
     gtmEvent("Provisions_popup_close");

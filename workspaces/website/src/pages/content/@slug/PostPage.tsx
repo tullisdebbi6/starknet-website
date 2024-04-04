@@ -20,7 +20,6 @@ import {
   InstantSearch,
   useHits,
 } from "react-instantsearch-hooks-web";
-
 import { Post } from "@starknet-io/cms-data/src/posts";
 import { TableOfContents } from "src/pages/(components)/TableOfContents/TableOfContents";
 import { Text } from "@ui/Typography/Text";
@@ -36,6 +35,8 @@ import { BlogCard } from "@ui/Blog/BlogCard";
 import { BlogHit } from "../PostsPage";
 import { BlogBreadcrumbs } from "@ui/Blog/BlogBreadcrumbs";
 import SocialShare from "./SocialShare/SocialShare";
+import { LatestAnnouncements } from "@starknet-io/cms-data/src/settings/latest-announcements";
+import LatestAnnouncement from "@ui/LatestAnnouncement/LatestAnnouncement";
 
 export interface Props {
   readonly params: LocaleParams & {
@@ -43,6 +44,7 @@ export interface Props {
   };
   readonly categories: readonly Category[];
   readonly topics: readonly Topic[];
+  readonly latestAnnouncements: readonly LatestAnnouncements[];
   readonly post: Post;
   readonly env?: {
     readonly ALGOLIA_INDEX: string;
@@ -64,18 +66,24 @@ export interface MarkdownBlock {
 /**
  * Export `PostPage` component.
  */
-
-export function PostPage(props: Props): JSX.Element {
-  const {
-    params: { slug, locale },
-    categories,
-    topics,
-    post,
-    env,
-  } = props;
+enum GridAreas {
+  BREADCRUMBS = "breadcrumbs",
+  POST = "post",
+  LATEST_ANNOUNCEMENT = "latestAnnouncement",
+  TIMELINE = "timeline",
+}
+export function PostPage({
+  params: { slug, locale },
+  categories,
+  topics,
+  latestAnnouncements,
+  post,
+  env,
+}: Props): JSX.Element {
   const postCategories = categories.filter((c) => post.category.includes(c.id));
   const videoId = post.post_type !== "article" ? post.video?.id : undefined;
   const isMobile = useBreakpointValue({ base: true, lg: false });
+  const isTablet = useBreakpointValue({ base: true, xl: false });
   const searchClient = useMemo(() => {
     return algoliasearch(
       env?.ALGOLIA_APP_ID ?? "",
@@ -84,20 +92,21 @@ export function PostPage(props: Props): JSX.Element {
   }, [env?.ALGOLIA_APP_ID, env?.ALGOLIA_SEARCH_API_KEY]);
 
   return (
-    <Container py="0" pb="16" maxW={"1624px"}>
+    <Container py="0" pb="16" maxW={"1624px"} position="relative">
       <Grid
+        position="relative"
         gridTemplateAreas={{
-          base: '"breadcrumbs" "post"',
-          lg: '". breadcrumbs ." "timeline post ."',
+          base: `"${GridAreas.BREADCRUMBS}" "${GridAreas.POST}" "${GridAreas.LATEST_ANNOUNCEMENT}"`,
+          lg: `". ${GridAreas.BREADCRUMBS} ." "${GridAreas.TIMELINE} ${GridAreas.POST} ${GridAreas.LATEST_ANNOUNCEMENT}"`,
         }}
         gridTemplateColumns={{
           base: "1fr",
-          lg: "240px 1fr 240px",
+          lg: "240px 1fr 300px",
         }}
-        gridColumnGap={"105px"}
+        gridColumnGap={{ base: "105px", xl: "40px", "2xl": "80px" }}
       >
         <BlogBreadcrumbs
-          gridArea={"breadcrumbs"}
+          gridArea={GridAreas.BREADCRUMBS}
           height={{
             base: "68px",
             lg: "118px",
@@ -110,7 +119,7 @@ export function PostPage(props: Props): JSX.Element {
         {!!post.toc && !isMobile ? (
           <Box
             alignSelf={"start"}
-            gridArea={"timeline"}
+            gridArea={GridAreas.TIMELINE}
             as={"aside"}
             role={"complementary"}
             position={"sticky"}
@@ -120,7 +129,7 @@ export function PostPage(props: Props): JSX.Element {
           </Box>
         ) : null}
 
-        <Box gridArea={"post"} overflow={"hidden"}>
+        <Box gridArea={GridAreas.POST} overflow={"hidden"}>
           <Box maxWidth="1024px">
             {post.post_type === "article" ? (
               <Box>
@@ -188,9 +197,11 @@ export function PostPage(props: Props): JSX.Element {
                 {post.post_desc}
               </Heading>
             )}
-            <Flex alignItems={"center"} gap={"8px"}>
-              <SocialShare params={{ slug, locale }} />
-            </Flex>
+            {isTablet && (
+              <Flex alignItems={"center"} gap={"8px"}>
+                <SocialShare params={{ slug, locale }} />
+              </Flex>
+            )}
             <Divider mt={{ base: "56px", xl: "8px" }} mb="48px" />
 
             {post.post_type !== "article" && (
@@ -246,10 +257,25 @@ export function PostPage(props: Props): JSX.Element {
             <Flex gap={"24px"}></Flex>
           </Box>
         </Box>
+        {!isTablet && (
+          <Box
+            gap={{ lg: 1, xl: 5, "2xl": 10 }}
+            gridArea={GridAreas.LATEST_ANNOUNCEMENT}
+            display="flex"
+            flexDirection="row"
+          >
+            <SocialShare params={{ slug, locale }} />
+            <LatestAnnouncement list={latestAnnouncements} />
+          </Box>
+        )}
+        {isTablet && (
+          <LatestAnnouncement
+            list={latestAnnouncements}
+            gridArea={GridAreas.LATEST_ANNOUNCEMENT}
+          />
+        )}
       </Grid>
-
       <Divider mb={"96px"} mt={"80px"} />
-
       <Heading color="heading-navy-fg" marginBottom="48px" variant="h4">
         May also interest you
       </Heading>
@@ -265,7 +291,6 @@ export function PostPage(props: Props): JSX.Element {
             locale: [locale],
           }}
         />
-
         <RelatedSection post={post} topics={topics} />
       </InstantSearch>
     </Container>
