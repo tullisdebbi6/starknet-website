@@ -68,3 +68,11 @@ items:
       - events
       - pages
       - seo
+  - username: theowolff
+    name: Tobby - Webiya
+    access:
+      - all
+  - username: rocoscali
+    name: Roi Webiya
+    access:
+      - all
