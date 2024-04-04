@@ -17,7 +17,7 @@ export async function getLatestAnnouncements(
       context
     );
 
-    return latestAnnouncements;
+    return latestAnnouncements.announcements;
   } catch (cause) {
     throw new Error("getLatestAnnouncements failed!", {
       cause,
