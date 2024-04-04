@@ -147,3 +147,5 @@ items:
     destination: https://76b3bqt1cf1.typeform.com/corestars
   - source: /en/learn/frequently-asked-questions
     destination: /starknet-frequently-asked-questions
+  - source: /wpl
+    destination: https://starkwareindustries.slack.com/archives/C05TF8B841E/p1712236770967759?thread_ts=1712225741.938889&cid=C05TF8B841E
