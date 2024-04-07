@@ -2,7 +2,7 @@ items:
   - source: /
     destination: /en
   - source: /discord
-    destination: https://discord.gg/qypnmzkhbc
+    destination: https://discord.gg/starknet-community
   - source: /sequencer-api
     destination: /en/developers
   - source: /cairopal
