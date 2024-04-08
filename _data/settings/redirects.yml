@@ -155,3 +155,7 @@ items:
     destination: /en/
   - source: /fr/
     destination: /en/
+  - source: /ja/
+    destination: /en/
+  - source: /ko/
+    destination: /en/
