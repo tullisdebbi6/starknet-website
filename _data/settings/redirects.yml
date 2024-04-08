@@ -159,3 +159,7 @@ items:
     destination: /en/
   - source: /ko/
     destination: /en/
+  - source: /pt/
+    destination: /en/
+  - source: /pt/community/ambassadors-program
+    destination: /en/
