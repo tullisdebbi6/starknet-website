@@ -151,3 +151,5 @@ items:
     destination: https://rbwiax75p4w.typeform.com/to/jPgPdA8l
   - source: /de/
     destination: /en/
+  - source: /es/
+    destination: /en/
