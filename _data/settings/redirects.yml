@@ -149,3 +149,17 @@ items:
     destination: /starknet-frequently-asked-questions
   - source: /wpl
     destination: https://rbwiax75p4w.typeform.com/to/jPgPdA8l
+  - source: /de/
+    destination: /en/
+  - source: /es/
+    destination: /en/
+  - source: /fr/
+    destination: /en/
+  - source: /ja/
+    destination: /en/
+  - source: /ko/
+    destination: /en/
+  - source: /pt/
+    destination: /en/
+  - source: /pt/community/ambassadors-program
+    destination: /en/
