@@ -149,3 +149,5 @@ items:
     destination: /starknet-frequently-asked-questions
   - source: /wpl
     destination: https://rbwiax75p4w.typeform.com/to/jPgPdA8l
+  - source: /de/
+    destination: /en/
