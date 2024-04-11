@@ -2,7 +2,8 @@ id: 90c74597-1d04-4053-ad04-10f063f17c0c
 post_type: article
 isFeatured: false
 title: Starknet’s Roadmap
-seoTitle: "What’s coming next for Starknet "
+seoTitle: "Starknet’s Roadmap: A major Boost In Throughput & Slashed Transaction Fees"
+toc: true
 published_date: 2024-03-20T11:49:45.532Z
 image: /assets/digital-board-game.jpg
 category:
@@ -17,8 +18,9 @@ short_desc: "Starknet is enhancing its network in response to community
   reducing fees. "
 post_desc: |
   A major boost in throughput and slashed transaction fees are on the way.
-seo_desc: Developers and users on Starknet can look forward to a major boost in
-  throughput and reduction in transaction fees this year.
+seo_desc: An outline of Starknet's Roadmap and the major performance upgrades
+  and fee reduction plans that aim to further enhance Starknet’s scaling
+  capabilities.
 seoFocusKeywords:
   - starkent
   - fees
