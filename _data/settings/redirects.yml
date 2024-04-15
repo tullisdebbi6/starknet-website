@@ -165,3 +165,9 @@ items:
     destination: /en/
   - source: /learn/what-is-starknet
     destination: /en/learn/what-is-starknet
+  - source: /fr/learn/what-is-starknet
+    destination: /en/learn/what-is-starknet
+  - destination: /en/learn/what-is-starknet
+    source: /ja/learn/what-is-starknet
+  - destination: /en/learn/what-is-starknet
+    source: /ko/learn/what-is-starknet
