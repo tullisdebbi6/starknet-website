@@ -95,7 +95,7 @@ blocks:
           custom_title: Starknet Vietnam Community
           custom_external_link: https://t.me/starknetvn
       - link:
-          hasIcon: false
+          hasIcon: true
           custom_external_link: https://t.me/starknetarabic/3
           custom_title: Starknet Arabic
   - type: link_list
