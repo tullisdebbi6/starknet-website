@@ -13,7 +13,7 @@ blocks:
     description: Secure your apps with auditing services for Starknet Smart Contracts.
   - type: card_list
     randomize: true
-    title: Auditing Companies
+    title: Auditing Tools
     card_list_items:
       - title: ABDK
         website_url: https://www.abdk.consulting/
@@ -87,7 +87,7 @@ blocks:
         twitter: https://twitter.com/cairoaudit
   - type: card_list
     randomize: false
-    title: Security and Risk Prevention Companies
+    title: Security and Risk Prevention Tool
     card_list_items:
       - title: Hypernative
         description: Hypernative is a real time security and risk prevention platform
