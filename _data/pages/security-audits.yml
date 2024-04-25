@@ -85,13 +85,6 @@ blocks:
         website_url: https://cairosecurityclan.com/
         twitter: https://twitter.com/cairoaudit
   - type: card_list
-    randomize: true
-    title: Bug Bounty Program
-    card_list_items:
-      - title: Immunefi
-        website_url: https://immunefi.com/bounty/starknet/
-        image: /assets/immunefi-logo.jpg
-  - type: card_list
     randomize: false
     title: Security and Risk Prevention Tools
     card_list_items:
@@ -102,3 +95,10 @@ blocks:
         website_url: https://www.hypernative.io/
         twitter: https://twitter.com/HypernativeLabs
         image: /assets/6357862a5c0d9a355f2adaaa_hypernative_logo-1-.png
+  - type: card_list
+    randomize: true
+    title: Bug Bounty Program
+    card_list_items:
+      - title: Immunefi
+        website_url: https://immunefi.com/bounty/starknet/
+        image: /assets/immunefi-logo.jpg
