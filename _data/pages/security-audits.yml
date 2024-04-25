@@ -83,13 +83,6 @@ blocks:
         image: /assets/img_7042.png
         website_url: https://cairosecurityclan.com/
         twitter: https://twitter.com/cairoaudit
-      - title: Hypernative
-        description: Hypernative is a real time security and risk prevention platform
-          that helps protocols, chains and asset managers detect hacks/exploits
-          or other custom risk before they happen.
-        website_url: https://www.hypernative.io/
-        image: /assets/6357862a5c0d9a355f2adaaa_hypernative_logo-1-.png
-        twitter: https://twitter.com/HypernativeLabs
   - type: card_list
     randomize: true
     title: Bug Bounty Program
