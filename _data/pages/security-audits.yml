@@ -100,3 +100,11 @@ blocks:
   - type: card_list
     randomize: false
     title: Security and Risk Prevention Tools
+    card_list_items:
+      - title: Hypernative
+        description: Hypernative is a real time security and risk prevention platform
+          that helps protocols, chains and asset managers detect hacks/exploits
+          or other custom risk before they happen.
+        website_url: https://www.hypernative.io/
+        twitter: https://twitter.com/HypernativeLabs
+        image: /assets/6357862a5c0d9a355f2adaaa_hypernative_logo-1-.png
