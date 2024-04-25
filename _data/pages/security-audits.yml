@@ -87,7 +87,7 @@ blocks:
         twitter: https://twitter.com/cairoaudit
   - type: card_list
     randomize: false
-    title: Security and Risk Prevention Tools
+    title: Security and Risk Prevention Companies
     card_list_items:
       - title: Hypernative
         description: Hypernative is a real time security and risk prevention platform
