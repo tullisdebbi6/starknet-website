@@ -1,5 +1,7 @@
 id: af68f1f8-b2a3-49e2-bec0-f36165cc331f
-title: Security & audits
+title: Security & Audit Tools
+seoTitle: Security & Audit Tools | Starknet
+seoDescription: Secure your apps with auditing services and tools for Starknet Smart Contracts.
 template: landing
 parent_page: /ecosystem/
 breadcrumbs: false
@@ -7,7 +9,7 @@ page_last_updated: true
 blocks:
   - type: hero
     variant: security
-    title: Security & audits
+    title: Security & Audit Tools
     description: Secure your apps with auditing services for Starknet Smart Contracts.
   - type: card_list
     randomize: true
@@ -83,13 +85,17 @@ blocks:
         image: /assets/img_7042.png
         website_url: https://cairosecurityclan.com/
         twitter: https://twitter.com/cairoaudit
+  - type: card_list
+    randomize: false
+    title: Security and Risk Prevention Tools
+    card_list_items:
       - title: Hypernative
-        description: Hypernative is real time security and risk prevention platform, it
-          help protocols, chains and asset managers detect hacks/exploits or
-          other custom risk before they happen and automatically prevent them.
+        description: Hypernative is a real time security and risk prevention platform
+          that helps protocols, chains and asset managers detect hacks/exploits
+          or other custom risk before they happen.
         website_url: https://www.hypernative.io/
-        image: /assets/6357862a5c0d9a355f2adaaa_hypernative_logo-1-.png
         twitter: https://twitter.com/HypernativeLabs
+        image: /assets/6357862a5c0d9a355f2adaaa_hypernative_logo-1-.png
   - type: card_list
     randomize: true
     title: Bug Bounty Program
