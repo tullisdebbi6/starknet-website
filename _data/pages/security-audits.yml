@@ -97,3 +97,6 @@ blocks:
       - title: Immunefi
         website_url: https://immunefi.com/bounty/starknet/
         image: /assets/immunefi-logo.jpg
+  - type: card_list
+    randomize: false
+    title: Security and Risk Prevention Tools
