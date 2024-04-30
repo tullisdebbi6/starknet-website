@@ -99,10 +99,3 @@ items:
                 custom_title: All content
               - custom_title: Media kit
                 page: 575c22e7-477f-4a7e-9b90-7406b802176f
-              - custom_title: Starknet EDU newsletter
-                custom_external_link: https://starknet.substack.com/
-              - custom_title: Starknet research hub
-                custom_external_link: https://starknet-research.beehiiv.com/
-              - custom_title: Starknet Edu Blog
-                custom_external_link: https://medium.com/starknet-edu
-                hide_from_footer: true
