@@ -70,9 +70,6 @@ items:
                 custom_title: Ecosystem jobs
               - custom_title: Governance
                 custom_external_link: https://governance.starknet.io/
-              - custom_internal_link: ""
-                custom_title: Ambassador program
-                page: 5ecdf9cf-d433-478a-a280-07e0f860534f
               - custom_title: Community forum
                 custom_external_link: https://community.starknet.io/
               - page: d4d04818-2330-4c35-a33e-0f2bc3ca7e8f
