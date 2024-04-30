@@ -204,3 +204,21 @@ blocks:
           hasIcon: true
           custom_title: Starknet China
           custom_external_link: https://www.youtube.com/@starknetzh
+  - type: link_list
+    randomize: false
+    heading: Research & Education Resources
+    blocks:
+      - link:
+          hasIcon: true
+          custom_external_link: https://starknet-research.beehiiv.com/
+          custom_title: Starknet research hub
+        avatar:
+          displayTitle: false
+      - link:
+          hasIcon: true
+          custom_external_link: https://medium.com/starknet-edu
+          custom_title: Starknet Edu Blog
+      - link:
+          hasIcon: true
+          custom_external_link: https://starknet.substack.com/
+          custom_title: Starknet Edu Newsletter
