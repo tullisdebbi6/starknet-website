@@ -58,7 +58,7 @@ blocks:
         title: NFTScan - NFT explorer
         image: /assets/400_400.png
         twitter: https://twitter.com/nftscan_com
-        discord: discord.gg/nftscan
+        discord: https://discord.gg/nftscan
       - title: Stark Compass
         description: An open-source Starknet explorer.
         twitter: https://twitter.com/starkcompass
