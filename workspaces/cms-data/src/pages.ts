@@ -66,12 +66,27 @@ export interface ListCardItems {
   type: string;
 }
 
+export interface DisplayCardItems {
+  title: string;
+  description: string;
+  image: string;
+}
+
 export interface ListCardItemsBlock {
   readonly type: "card_list";
   readonly title: string;
   readonly card_list_items: ListCardItems[];
   readonly noOfItems: number;
   readonly description: string;
+  randomize?: boolean;
+}
+export interface DisplayCardItemsBlock {
+  readonly type: "card_display";
+  readonly title: string;
+  readonly card_display_items: DisplayCardItems[];
+  readonly noOfItems: number;
+  readonly button: string;
+  readonly buttonLink: string;
   randomize?: boolean;
 }
 
@@ -202,6 +217,7 @@ export type Block =
   | AccordionBlock
   | OrderedBlock
   | ListCardItemsBlock
+  | DisplayCardItemsBlock
   | AmbassadorsListBlock
   | VideoSectionBlock
   | NewsletterBlock;

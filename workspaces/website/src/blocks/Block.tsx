@@ -22,6 +22,7 @@ import VideoSectionBlock from "./VideoSectionBlock";
 import { NewsletterCard } from "@ui/Card/NewsletterCard";
 import { YoutubePlayer } from "@ui/YoutubePlayer/YoutubePlayer";
 import NavbarStickyBanner from "../pages/(components)/NavbarStickyBanner/NavbarStickyBanner";
+import DisplayCardItems from "./DisplayCardItems";
 
 export enum BlockPlacements {
   DEFAULT = "DEFAULT",
@@ -182,6 +183,15 @@ export function Block({
         case "card_list":
           return (
             <ListCardItems
+              {...block}
+              params={{
+                locale,
+              }}
+            />
+          );
+        case "card_display":
+          return (
+            <DisplayCardItems
               {...block}
               params={{
                 locale,
