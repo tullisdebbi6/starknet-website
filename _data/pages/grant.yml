@@ -4,7 +4,7 @@ template: content
 hideToc: true
 hidden_page: false
 breadcrumbs: false
-page_last_updated: false
+page_last_updated: true
 blocks:
   - type: hero
     variant: learn
