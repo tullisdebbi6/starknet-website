@@ -57,6 +57,12 @@ blocks:
         link_url: https://www.layerswap.io
         website_url: https://www.layerswap.io
         twitter: https://twitter.com/layerswap
+      - website_url: https://bridge.arkproject.dev/
+        twitter: https://twitter.com/ArkProjectNFTs
+        image: /assets/screenshot-2024-05-01-173559.png
+        description: ArkProject allows you to transfer ethreum Nfts on Starknet. Bridge
+          your Everai NFTs and complete your first ArkProject quests.
+        title: ArkProject
     randomize: false
   - type: card_list
     title: On-ramps
