@@ -1,4 +1,12 @@
-import { Box, Stack, BoxProps, Img, Text, Circle } from "@chakra-ui/react";
+import {
+  Box,
+  Stack,
+  BoxProps,
+  Text,
+  Circle,
+  Img,
+  useColorMode,
+} from "@chakra-ui/react";
 import { Heading } from "@ui/Typography/Heading";
 
 type Props = {
@@ -19,7 +27,10 @@ const images = {
   Onboarding: "/assets/onboarding.svg",
   "Grant Deliverables": "/assets/grant_deliverables.svg",
 };
+
 export const DisplayCard = (props: Props) => {
+  const { colorMode } = useColorMode();
+
   return (
     <Box maxW="5xl">
       <Box
@@ -31,6 +42,7 @@ export const DisplayCard = (props: Props) => {
         padding={"32px 24px"}
         border="1px"
         borderColor="#EFEFEF"
+        _dark={{ borderColor: "transparent" }}
         px={{ base: "6", md: "8" }}
       >
         <Stack
@@ -52,6 +64,9 @@ export const DisplayCard = (props: Props) => {
                 src={images[props?.title]}
                 title={props.title}
                 objectFit="contain"
+                style={{
+                  filter: `invert(${colorMode === "light" ? 0 : 1})`,
+                }}
               />
             </Box>
           </Stack>
@@ -61,11 +76,17 @@ export const DisplayCard = (props: Props) => {
               pb="4px"
               paddingTop="4px"
             >
-              <Circle size="24px" bg="#0C0C4F" color="white">
+              <Circle
+                size="24px"
+                bg="#0C0C4F"
+                _dark={{ bg: "white", color: "black" }}
+                color="white"
+              >
                 {props.index}
               </Circle>
               <Heading
                 variant="h4"
+                fontSize={18}
                 color="btn-primary-bg"
                 _dark={{
                   color: "button-nav-fg",

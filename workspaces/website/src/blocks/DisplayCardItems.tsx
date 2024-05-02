@@ -43,6 +43,7 @@ export default function DisplayCardItems({
               href={buttonLink}
               bgColor="#0C0C4F"
               color="white"
+              _dark={{ color: "#0C0C4F", bgColor: "white" }}
               padding={1}
               paddingInline={2}
               borderRadius="6px"
