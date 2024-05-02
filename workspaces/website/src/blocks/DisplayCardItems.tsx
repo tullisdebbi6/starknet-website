@@ -3,7 +3,6 @@ import { Heading } from "@ui/Typography/Heading";
 import { slugify } from "@starknet-io/cms-utils/src/index";
 import type { DisplayCardItems } from "@starknet-io/cms-data/src/pages";
 import { DisplayCard } from "@ui/Card/DisplayCard";
-
 interface Props extends LocaleProps {
   title: string;
   button?: string;
@@ -51,14 +50,13 @@ export default function DisplayCardItems({
           )}
         </Flex>
         <Flex gap={4} direction="column" flex={1}>
-          {card_display_items?.map(({ title, description, image }, i) => {
+          {card_display_items?.map(({ title, description }, i) => {
             return (
               <DisplayCard
                 key={title + i}
                 index={i + 1}
                 title={title}
                 description={description}
-                image={image}
               />
             );
           })}

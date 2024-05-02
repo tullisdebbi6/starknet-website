@@ -3,12 +3,24 @@ import { Heading } from "@ui/Typography/Heading";
 import { CardGradientBorder } from "@ui/Card/components/CardGradientBorder";
 
 type Props = {
-  readonly title?: string;
+  readonly title:
+    | "Application"
+    | "Internal Evaluation"
+    | "Results"
+    | "Onboarding"
+    | "Grant Deliverables";
   readonly description?: string;
   readonly image?: string;
   readonly index: number;
 } & BoxProps;
 
+const images = {
+  Application: "/assets/application.svg",
+  "Internal Evaluation": "/assets/internal_evaluation.svg",
+  Results: "/assets/results.svg",
+  Onboarding: "/assets/onboarding.svg",
+  "Grant Deliverables": "/assets/grant_deliverables.svg",
+};
 export const DisplayCard = (props: Props) => {
   const cloudflareImage = `https://www.starknet.io/cdn-cgi/image/width=80px,height=auto,format=auto${props.image}`;
   const isProd = import.meta.env.VITE_ALGOLIA_INDEX === "production";
@@ -32,7 +44,7 @@ export const DisplayCard = (props: Props) => {
               spacing={{ base: "3", md: "6" }}
               align="center"
             >
-              {props.image && (
+              {props.image ? (
                 <Stack spacing="4">
                   <Box
                     width="80px"
@@ -45,6 +57,24 @@ export const DisplayCard = (props: Props) => {
                       width="full"
                       height="full"
                       src={isProd ? cloudflareImage : props.image}
+                      title={props.title}
+                      objectFit="contain"
+                    />
+                  </Box>
+                </Stack>
+              ) : (
+                <Stack spacing="4">
+                  <Box
+                    width="80px"
+                    height="80px"
+                    borderRadius="8px"
+                    overflow="hidden"
+                    marginBottom={{ base: "16px", md: "0" }}
+                  >
+                    <Img
+                      width="full"
+                      height="full"
+                      src={isProd ? cloudflareImage : images[props?.title]}
                       title={props.title}
                       objectFit="contain"
                     />

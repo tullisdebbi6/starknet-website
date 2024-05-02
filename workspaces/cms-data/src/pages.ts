@@ -67,9 +67,14 @@ export interface ListCardItems {
 }
 
 export interface DisplayCardItems {
-  title: string;
+  title:
+    | "Application"
+    | "Internal Evaluation"
+    | "Results"
+    | "Onboarding"
+    | "Grant Deliverables";
   description: string;
-  image: string;
+  image?: string;
 }
 
 export interface ListCardItemsBlock {
