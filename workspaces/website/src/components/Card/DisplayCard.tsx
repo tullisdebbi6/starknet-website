@@ -1,12 +1,9 @@
-import {
-  Box,
-  Stack,
-  BoxProps,
-  Text,
-  Circle,
-  Img,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Box, Stack, BoxProps, Text, Circle } from "@chakra-ui/react";
+import { Application } from "@ui/Icons/DisplayCardIcons/Application";
+import { GrantDeliverables } from "@ui/Icons/DisplayCardIcons/GrantDeliverables";
+import { InternalEvaluation } from "@ui/Icons/DisplayCardIcons/InternalEvaluation";
+import { Onboarding } from "@ui/Icons/DisplayCardIcons/Onboarding";
+import { Results } from "@ui/Icons/DisplayCardIcons/Results";
 import { Heading } from "@ui/Typography/Heading";
 
 type Props = {
@@ -21,16 +18,14 @@ type Props = {
 } & BoxProps;
 
 const images = {
-  Application: "/assets/application.svg",
-  "Internal Evaluation": "/assets/internal_evaluation.svg",
-  Results: "/assets/results.svg",
-  Onboarding: "/assets/onboarding.svg",
-  "Grant Deliverables": "/assets/grant_deliverables.svg",
+  Application: <Application />,
+  "Internal Evaluation": <InternalEvaluation />,
+  Results: <Results />,
+  Onboarding: <Onboarding />,
+  "Grant Deliverables": <GrantDeliverables />,
 };
 
 export const DisplayCard = (props: Props) => {
-  const { colorMode } = useColorMode();
-
   return (
     <Box as="li" maxW="5xl">
       <Box
@@ -56,18 +51,11 @@ export const DisplayCard = (props: Props) => {
               height="80px"
               borderRadius="8px"
               overflow="hidden"
+              color="#0C0C4F"
+              _dark={{ color: "white" }}
               marginBottom={{ base: "16px", md: "0" }}
             >
-              <Img
-                width="full"
-                height="full"
-                src={images[props?.title]}
-                title={props.title}
-                objectFit="contain"
-                style={{
-                  filter: `invert(color:${colorMode === "light" ? 0 : 1})`,
-                }}
-              />
+              {images[props?.title]}
             </Box>
           </Stack>
           <Box flex="1">
