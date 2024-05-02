@@ -2,6 +2,7 @@ id: 80c9a40d-ac4c-4bee-8c78-dd83667a1a97
 title: Grant
 template: content
 hideToc: true
+parent_page: ""
 hidden_page: false
 breadcrumbs: false
 page_last_updated: true
@@ -33,52 +34,63 @@ blocks:
       - title: Grant Deliverables
         description: "After completion of the work, the Foundation will assess results
           and share deliverables (blog post, video, AMA) with the team.  "
-  - type: flex_layout
-    heading_variant: sm
+  - type: container
     blocks:
-      - type: markdown
-        body: >-
-          The grants will be awarded to individuals and teams demonstrating
-          promising results in building applications on Starknet, using any
-          combination of the following criteria:
+      - type: flex_layout
+        heading_variant: sm
+        blocks:
+          - type: markdown
+            body: >-
+              The grants will be awarded to individuals and teams demonstrating
+              promising results in building applications on Starknet, using any
+              combination of the following criteria:
 
 
-          * Prior development experience on Starknet.
+              * Prior development experience on Starknet.
 
-          * Active involvement in the Starknet community, indicated by participation in a Starknet hackathon, builder program, or another entry-level initiative.
+              * Active involvement in the Starknet community, indicated by participation in a Starknet hackathon, builder program, or another entry-level initiative.
 
-          * Willing to submit a demo or links to a proof of concept or MVP.
+              * Willing to submit a demo or links to a proof of concept or MVP.
 
-          * Planning on using or building upon existing Starknet tools and integrations.
-
-
-          **All applicants will be required to provide a clear roadmap detailing how the grant will be used within the next three months.**
-    heading: Who Can Apply?
-  - type: flex_layout
-    heading_variant: sm
-    blocks:
-      - type: markdown
-        body: >-
-          
-
-          Projects currently affiliated with the Starknet Foundation’s Developer Partnership are not eligible to participate in the Seed Grants Program.
+              * Planning on using or building upon existing Starknet tools and integrations.
 
 
-          Ineligible applications include anything related to:
+              **All applicants will be required to provide a clear roadmap detailing how the grant will be used within the next three months.**
+        heading: Who Can Apply?
+        xl: 1
+        lg: 1
+        md: 1
+        base: 1
+      - type: flex_layout
+        heading_variant: sm
+        blocks:
+          - type: markdown
+            body: >-
+              
+
+              Projects currently affiliated with the Starknet Foundation’s Developer Partnership are not eligible to participate in the Seed Grants Program.
 
 
-          * Gambling
+              Ineligible applications include anything related to:
 
-          * Drugs
 
-          * Firearms
+              * Gambling
 
-          * Illicit trade
+              * Drugs
 
-          * Money laundering
+              * Firearms
 
-          * Any criminal activity
-    heading: Who is Not Eligible
+              * Illicit trade
+
+              * Money laundering
+
+              * Any criminal activity
+        heading: Who is Not Eligible
+        base: 1
+        md: 1
+        lg: 1
+        xl: 1
+    max_width: 1062
   - type: card_list
     randomize: false
     title: Apply Now!
