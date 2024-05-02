@@ -31,6 +31,7 @@ type Props = {
   readonly location?: string;
   readonly image?: string;
   readonly href: string;
+  readonly changeLayout?: boolean;
   readonly city?: string;
   readonly country?: string;
   readonly twitter?: string;
@@ -47,13 +48,11 @@ type Props = {
 
 export const ListCard = (props: Props) => {
   const cloudflareImage = `https://www.starknet.io/cdn-cgi/image/width=80px,height=auto,format=auto${props.image}`;
-  const isProd  = import.meta.env.VITE_ALGOLIA_INDEX === "production";
-  
+  const isProd = import.meta.env.VITE_ALGOLIA_INDEX === "production";
+
   return (
     <Box maxW="5xl">
-      <LinkBox
-        sx={{ textDecoration: "none!important", cursor: "pointer" }}
-      >
+      <LinkBox sx={{ textDecoration: "none!important", cursor: "pointer" }}>
         <CardGradientBorder padding="0" borderRadius={{ base: "16px" }}>
           <Box
             w={{ base: "full" }}
@@ -62,9 +61,7 @@ export const ListCard = (props: Props) => {
             borderRadius="16px"
             rounded={props.variant === "default" ? "8px" : "16px"}
             padding={"32px 24px"}
-            // borderWidth="1px"
             borderColor="card-br"
-            // shadow={{ md: "base" }}
             px={{ base: "6", md: "8" }}
           >
             <Stack
@@ -72,35 +69,34 @@ export const ListCard = (props: Props) => {
               spacing={{ base: "3", md: "6" }}
               align="center"
             >
-              {props.image && <Stack spacing="4">
-                <Box
-                  width="80px"
-                  height="80px"
-                  borderRadius="8px"
-                  overflow="hidden"
-                  marginBottom={{ base: "16px", md: "0" }}
-                >
-                  <Img
-                    width="full"
-                    height="full"
-                    src={isProd ? cloudflareImage : props.image}
-                    title={props.title}
-                    objectFit="contain"
-                  />
-                </Box>
-              </Stack>}
+              {props.image && (
+                <Stack spacing="4">
+                  <Box
+                    width="80px"
+                    height="80px"
+                    borderRadius="8px"
+                    overflow="hidden"
+                    marginBottom={{ base: "16px", md: "0" }}
+                  >
+                    <Img
+                      width="full"
+                      height="full"
+                      src={isProd ? cloudflareImage : props.image}
+                      title={props.title}
+                      objectFit="contain"
+                    />
+                  </Box>
+                </Stack>
+              )}
               <Box flex="1">
                 {props.startDateTime && (
                   <Text
-                    // mt="2"
                     fontSize="xs"
                     fontWeight="bold"
                     color="list-card-sm-title-fg"
                     display="flex"
                     flexDirection={{ base: "row", md: "row" }}
-                    // justifyContent="space-between"
                     alignItems={{ base: "flex-start", md: "center" }}
-                    // margin="0"
                   >
                     {props.startDateTime}
                     {props.city && (
@@ -109,70 +105,92 @@ export const ListCard = (props: Props) => {
                       </Text>
                     )}
                     <Text
-                      // mt="2"
                       fontSize="xs"
                       fontWeight="bold"
                       color="list-card-sm-title-fg"
-                      // paddingBottom="4px",
-
                       as="span"
                     >
-                      {/* {props.city} */}
                       {props.city && `  ${props.city}, `}
                       {props.country && props.country}
                     </Text>
                   </Text>
                 )}
-                <Stack
-                  spacing={{ base: "1", md: "2" }}
-                  direction={{ base: "row", md: "row" }}
-                  pb="4px"
-                  // removing until designers look at this
-                  // borderTop={!props.startDateTime ? "none" : "1px solid red"}
-                  paddingTop="4px"
-                >
-                  <Heading
-                    variant="h4"
-                    color="btn-primary-bg"
-                    _dark={{
-                      color: "button-nav-fg",
-                    }}
-                  >
-                    {props.title}
-                  </Heading>
-                  <HStack fontSize={{ base: "md", md: "xl" }}>
-                    {/* <Icon as={FiExternalLink} color="list-card-sm-title-link-fg" /> */}
-                    <Icon
-                      as={HiArrowTopRightOnSquare}
-                      color="list-card-sm-title-link-fg"
-                    />
-                  </HStack>
-                </Stack>
 
-                <LinkOverlay 
-                  pb="12px" 
-                  fontSize="sm" 
-                  color="list-card-lg-desc-fg"
-                  href={props.href!}
-                  target="_blank"
-                >
-                  {props.description}
-                </LinkOverlay>
-                {/* {props.variant === "event" && (
-                <Box py="8px">
-                  <Button variant="outline" size="sm">
-                    View event recap
-                  </Button>
-                </Box>
-              )} */}
+                {props.changeLayout ? (
+                  <>
+                    <LinkOverlay
+                      pb="12px"
+                      fontSize="sm"
+                      color="list-card-lg-desc-fg"
+                      href={props.href!}
+                      target="_blank"
+                    >
+                      {props.description}
+                    </LinkOverlay>
+                    <Stack
+                      spacing={{ base: "1", md: "2" }}
+                      direction={{ base: "row", md: "row" }}
+                      pb="4px"
+                      paddingTop="4px"
+                    >
+                      <Heading
+                        variant="h4"
+                        color="btn-primary-bg"
+                        _dark={{
+                          color: "button-nav-fg",
+                        }}
+                      >
+                        {props.title}
+                      </Heading>
+                      <HStack fontSize={{ base: "md", md: "xl" }}>
+                        <Icon
+                          as={HiArrowTopRightOnSquare}
+                          color="list-card-sm-title-link-fg"
+                        />
+                      </HStack>
+                    </Stack>
+                  </>
+                ) : (
+                  <>
+                    <Stack
+                      spacing={{ base: "1", md: "2" }}
+                      direction={{ base: "row", md: "row" }}
+                      pb="4px"
+                      paddingTop="4px"
+                    >
+                      <Heading
+                        variant="h4"
+                        color="btn-primary-bg"
+                        _dark={{
+                          color: "button-nav-fg",
+                        }}
+                      >
+                        {props.title}
+                      </Heading>
+                      <HStack fontSize={{ base: "md", md: "xl" }}>
+                        <Icon
+                          as={HiArrowTopRightOnSquare}
+                          color="list-card-sm-title-link-fg"
+                        />
+                      </HStack>
+                    </Stack>
+
+                    <LinkOverlay
+                      pb="12px"
+                      fontSize="sm"
+                      color="list-card-lg-desc-fg"
+                      href={props.href!}
+                      target="_blank"
+                    >
+                      {props.description}
+                    </LinkOverlay>
+                  </>
+                )}
+
                 {props.type_list ? (
                   <Wrap shouldWrapChildren mb="12px">
                     {props.type_list.map((tag) => (
-                      <Link
-                        key={tag.type}
-                        isExternal
-                        href={tag.url}
-                      >
+                      <Link key={tag.type} isExternal href={tag.url}>
                         <Tag variant="listCard">
                           {tag.type !== "ios" ? titleCase(tag.type) : "iOS"}
                         </Tag>
@@ -198,14 +216,12 @@ export const ListCard = (props: Props) => {
                   )
                 )}
 
-                <Wrap spacingX="24px" shouldWrapChildren mt='20px'>
+                <Wrap spacingX="24px" shouldWrapChildren mt="20px">
                   {props.href &&
+                    !props.changeLayout &&
                     props.variant !== "event" &&
                     props.variant !== "job" && (
-                      <Link
-                        isExternal
-                        href={`${props.href}`}
-                      >
+                      <Link isExternal href={`${props.href}`}>
                         <Icon
                           boxSize="18px"
                           color="list-card-icon-fg"
@@ -214,10 +230,7 @@ export const ListCard = (props: Props) => {
                       </Link>
                     )}
                   {props.twitter && (
-                    <Link
-                      isExternal
-                      href={`${props.twitter}`}
-                    >
+                    <Link isExternal href={`${props.twitter}`}>
                       <Icon
                         boxSize="18px"
                         color="list-card-icon-fg"
@@ -226,10 +239,7 @@ export const ListCard = (props: Props) => {
                     </Link>
                   )}
                   {props.discord && (
-                    <Link
-                      isExternal
-                      href={`${props.discord}`}
-                    >
+                    <Link isExternal href={`${props.discord}`}>
                       <Icon
                         boxSize="18px"
                         color="list-card-icon-fg"

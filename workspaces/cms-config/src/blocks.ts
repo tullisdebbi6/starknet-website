@@ -517,6 +517,13 @@ export const blocks = [
         crowdin: true,
       },
       {
+        label: "changeLayout",
+        name: "changeLayout",
+        required: false,
+        widget: "boolean",
+        crowdin: true,
+      },
+      {
         name: "randomize",
         label: "Randomize",
         widget: "boolean",

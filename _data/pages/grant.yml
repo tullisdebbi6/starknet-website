@@ -44,11 +44,18 @@ blocks:
               The grants will be awarded to individuals and teams demonstrating
               promising results in building applications on Starknet, using any
               combination of the following criteria:
+
               * Prior development experience on Starknet.
+
               * Active involvement in the Starknet community, indicated by participation in a Starknet hackathon, builder program, or another entry-level initiative.
+
               * Willing to submit a demo or links to a proof of concept or MVP.
+
               * Planning on using or building upon existing Starknet tools and integrations.
+
+
               **All applicants will be required to provide a clear roadmap detailing how the grant will be used within the next three months.**
+
         heading: Who Can Apply?
         xl: 1
         lg: 1
@@ -59,15 +66,21 @@ blocks:
         blocks:
           - type: markdown
             body: >-
-              
               Projects currently affiliated with the Starknet Foundation’s Developer Partnership are not eligible to participate in the Seed Grants Program.
               Ineligible applications include anything related to:
+
               * Gambling
+
               * Drugs
+
               * Firearms
+
               * Illicit trade
+
               * Money laundering
+
               * Any criminal activity
+
         heading: Who is Not Eligible
         base: 1
         md: 1
@@ -79,15 +92,18 @@ blocks:
     title: Apply Now!
     card_list_items:
       - title: Seed Grant Program Application Form
+        changeLayout: true
         description: Application Form
         image: /assets/sn-symbol-gradient.png
         website_url: "https://starknet.questbook.app/proposal_form/?grantId=661667585af\
           ea0acb56c9f08&chainId=10&newTab=true "
   - type: group
     blocks: []
-  - type: accordion
-    heading: FAQs
+  - type: container
     blocks:
+    - type: accordion
+      heading: FAQs
+      blocks:
       - label: What is the Seed Grants Program?
         body: "*  The Seed Grants Program offers teams developing on Starknet grants of
           up to $25,000 to foster the growth of the Starknet ecosystem"
@@ -129,3 +145,4 @@ blocks:
           Foundation and Starkware team, focusing on factors such as impact,
           innovation, community engagement, track record, and other relevant
           criteria.
+    max_width: 1062
