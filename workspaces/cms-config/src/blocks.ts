@@ -249,6 +249,28 @@ export const cardListItem = [
   },
 ] satisfies CmsField[];
 
+export const cardDisplayItem = [
+  {
+    label: "Title",
+    name: "title",
+    widget: "string",
+    crowdin: true,
+  },
+  {
+    label: "Description",
+    name: "description",
+    widget: "string",
+    crowdin: false,
+  },
+  {
+    label: "Image",
+    required: false,
+    name: "image",
+    widget: "image",
+    crowdin: false,
+  },
+] satisfies CmsField[];
+
 const videoChapterFields = [
   {
     crowdin: true,
@@ -495,6 +517,13 @@ export const blocks = [
         crowdin: true,
       },
       {
+        label: "changeLayout",
+        name: "changeLayout",
+        required: false,
+        widget: "boolean",
+        crowdin: true,
+      },
+      {
         name: "randomize",
         label: "Randomize",
         widget: "boolean",
@@ -506,6 +535,44 @@ export const blocks = [
         name: "card_list_items",
         widget: "list",
         fields: cardListItem,
+        crowdin: true,
+        required: true,
+        index_file: "",
+        meta: true,
+      },
+    ],
+  },
+  {
+    name: "card_display",
+    label: "Cards display",
+    widget: "object",
+    fields: [
+      {
+        label: "Title",
+        name: "title",
+        required: false,
+        widget: "string",
+        crowdin: true,
+      },
+      {
+        label: "button",
+        name: "button",
+        required: false,
+        widget: "string",
+        crowdin: true,
+      },
+      {
+        label: "button link",
+        name: "buttonLink",
+        required: false,
+        widget: "string",
+        crowdin: true,
+      },
+      {
+        label: "Card display items",
+        name: "card_display_items",
+        widget: "list",
+        fields: cardDisplayItem,
         crowdin: true,
         required: true,
         index_file: "",
@@ -542,6 +609,7 @@ export const blocks = [
           "community",
           "nodes_and_services",
           "security",
+          "seed_grant_program",
         ],
         default: "learn",
       },
