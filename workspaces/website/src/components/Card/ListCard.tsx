@@ -33,6 +33,7 @@ type Props = {
   readonly image?: string;
   readonly href: string;
   readonly reverse?: boolean;
+  readonly showIcons?: boolean;
   readonly city?: string;
   readonly country?: string;
   readonly twitter?: string;
@@ -49,6 +50,7 @@ type Props = {
 
 export const ListCard = ({
   reverse = false,
+  showIcons = true,
   title,
   startDateTime,
   description,
@@ -133,15 +135,6 @@ export const ListCard = ({
                   </Text>
                 )}
                 <Flex direction={reverse ? "column-reverse" : "column"}>
-                  <LinkOverlay
-                    pb="12px"
-                    fontSize="sm"
-                    color="list-card-lg-desc-fg"
-                    href={href!}
-                    target="_blank"
-                  >
-                    {description}
-                  </LinkOverlay>
                   <Stack
                     spacing={{ base: "1", md: "2" }}
                     direction={{ base: "row", md: "row" }}
@@ -164,76 +157,86 @@ export const ListCard = ({
                       />
                     </HStack>
                   </Stack>
-                </Flex>
-                {type_list ? (
-                  <Wrap shouldWrapChildren mb="12px">
-                    {type_list.map((tag) => (
-                      <Link key={tag.type} isExternal href={tag.url}>
-                        <Tag variant="listCard">
-                          {tag.type !== "ios" ? titleCase(tag.type) : "iOS"}
-                        </Tag>
-                      </Link>
-                    ))}
-                  </Wrap>
-                ) : (
-                  type && (
-                    <Wrap shouldWrapChildren mb="12px">
-                      {location && (
-                        <Tag variant="listCard">{titleCase(location)}</Tag>
-                      )}
-                      {type
-                        .filter((element) => element !== "")
-                        .map((tag) => (
-                          <Tag key={tag} variant="listCard">
-                            {titleCase(tag)}
-                          </Tag>
-                        ))}
-                    </Wrap>
-                  )
-                )}
-
-                <Wrap spacingX="24px" shouldWrapChildren mt="20px">
-                  {href &&
-                    !reverse &&
-                    variant !== "event" &&
-                    variant !== "job" && (
-                      <Link isExternal href={`${href}`}>
-                        <Icon
-                          boxSize="18px"
-                          color="list-card-icon-fg"
-                          as={HiGlobeAlt}
-                        />
-                      </Link>
-                    )}
-                  {twitter && (
-                    <Link isExternal href={`${twitter}`}>
-                      <Icon
-                        boxSize="18px"
-                        color="list-card-icon-fg"
-                        as={SiTwitter}
-                      />
-                    </Link>
-                  )}
-                  {discord && (
-                    <Link isExternal href={`${discord}`}>
-                      <Icon
-                        boxSize="18px"
-                        color="list-card-icon-fg"
-                        as={SiDiscord}
-                      />
-                    </Link>
-                  )}
-                </Wrap>
-                {recap?.link && (
-                  <Button
-                    href={recap.link}
-                    mt="20px"
-                    isExternal={recap.isExternal}
-                    variant="outlineRounded"
+                  <LinkOverlay
+                    pb="12px"
+                    fontSize="sm"
+                    color="list-card-lg-desc-fg"
+                    href={href!}
                     target="_blank"
                   >
-                    {recap.label || "View event recap"}
-                  </Button>
+                    {description}
+                  </LinkOverlay>
+                </Flex>
+                {showIcons && (
+                  <>
+                    {type_list ? (
+                      <Wrap shouldWrapChildren mb="12px">
+                        {type_list.map((tag) => (
+                          <Link key={tag.type} isExternal href={tag.url}>
+                            <Tag variant="listCard">
+                              {tag.type !== "ios" ? titleCase(tag.type) : "iOS"}
+                            </Tag>
+                          </Link>
+                        ))}
+                      </Wrap>
+                    ) : (
+                      type && (
+                        <Wrap shouldWrapChildren mb="12px">
+                          {location && (
+                            <Tag variant="listCard">{titleCase(location)}</Tag>
+                          )}
+                          {type
+                            .filter((element) => element !== "")
+                            .map((tag) => (
+                              <Tag key={tag} variant="listCard">
+                                {titleCase(tag)}
+                              </Tag>
+                            ))}
+                        </Wrap>
+                      )
+                    )}
+
+                    <Wrap spacingX="24px" shouldWrapChildren mt="20px">
+                      {href && variant !== "event" && variant !== "job" && (
+                        <Link isExternal href={`${href}`}>
+                          <Icon
+                            boxSize="18px"
+                            color="list-card-icon-fg"
+                            as={HiGlobeAlt}
+                          />
+                        </Link>
+                      )}
+                      {twitter && (
+                        <Link isExternal href={`${twitter}`}>
+                          <Icon
+                            boxSize="18px"
+                            color="list-card-icon-fg"
+                            as={SiTwitter}
+                          />
+                        </Link>
+                      )}
+                      {discord && (
+                        <Link isExternal href={`${discord}`}>
+                          <Icon
+                            boxSize="18px"
+                            color="list-card-icon-fg"
+                            as={SiDiscord}
+                          />
+                        </Link>
+                      )}
+                    </Wrap>
+                    {recap?.link && (
+                      <Button
+                        href={recap.link}
+                        mt="20px"
+                        isExternal={recap.isExternal}
+                        variant="outlineRounded"
+                        target="_blank"
+                      >
+                        {recap.label || "View event recap"}
+                      </Button>
+                    )}
+                  </>
                 )}
               </Box>
             </Stack>

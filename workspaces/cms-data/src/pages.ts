@@ -58,7 +58,6 @@ export interface ListCardItems {
   start_date_time: string;
   location: string;
   city: string;
-  reverse: boolean;
   discord: string;
   type_list: {
     type: string;
@@ -85,6 +84,8 @@ export interface ListCardItemsBlock {
   readonly noOfItems: number;
   readonly description: string;
   randomize?: boolean;
+  reverse?: boolean;
+  showIcons?: boolean;
 }
 export interface DisplayCardItemsBlock {
   readonly type: "card_display";

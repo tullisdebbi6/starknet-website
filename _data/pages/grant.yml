@@ -91,9 +91,10 @@ blocks:
   - type: card_list
     randomize: false
     title: Apply Now!
+    reverse: true
+    showIcons: false
     card_list_items:
       - title: Seed Grant Program Application Form
-        reverse: true
         description: Application Form
         image: /assets/sn-symbol-gradient.png
         website_url: "https://starknet.questbook.app/proposal_form/?grantId=661667585af\

@@ -524,6 +524,13 @@ export const blocks = [
         crowdin: true,
       },
       {
+        label: "show icons",
+        name: "showIcons",
+        required: false,
+        widget: "boolean",
+        crowdin: true,
+      },
+      {
         name: "randomize",
         label: "Randomize",
         widget: "boolean",
