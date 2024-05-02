@@ -1,9 +1,7 @@
 id: 80c9a40d-ac4c-4bee-8c78-dd83667a1a97
 title: Grant
-template: content
-hideToc: true
-parent_page: ""
-hidden_page: false
+template: landing
+parent_page: /ecosystem/
 breadcrumbs: false
 page_last_updated: true
 blocks:
@@ -61,11 +59,14 @@ blocks:
         lg: 1
         md: 1
         base: 1
+    max_width: 1062
+  - type: container
+    blocks:
       - type: flex_layout
         heading_variant: sm
         blocks:
-          - type: markdown
-            body: >-
+        - type: markdown
+          body: >-
               Projects currently affiliated with the Starknet Foundation’s Developer Partnership are not eligible to participate in the Seed Grants Program.
               Ineligible applications include anything related to:
 
@@ -97,8 +98,6 @@ blocks:
         image: /assets/sn-symbol-gradient.png
         website_url: "https://starknet.questbook.app/proposal_form/?grantId=661667585af\
           ea0acb56c9f08&chainId=10&newTab=true "
-  - type: group
-    blocks: []
   - type: container
     blocks:
     - type: accordion

@@ -21,12 +21,16 @@ export default function DisplayCardItems({
   return (
     <Box>
       <Container maxW="1062px">
-        <Flex justifyContent="space-between" mb="24px">
+        <Flex
+          justifyContent="space-between"
+          direction={{ base: "column", sm: "row" }}
+          mb="24px"
+        >
           {title && (
             <Heading
               color="heading-navy-fg"
               variant="h3"
-              mb="10px"
+              mb={{ base: "24px", sm: "10px" }}
               fontSize={24}
               id={`toc-${slugify(title)}`}
             >
@@ -44,6 +48,7 @@ export default function DisplayCardItems({
               borderRadius="6px"
               fontSize={16}
               style={{ textDecoration: "none" }}
+              textAlign="center"
             >
               {button} &rarr;
             </LinkBox>
