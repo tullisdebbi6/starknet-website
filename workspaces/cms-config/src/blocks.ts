@@ -517,8 +517,8 @@ export const blocks = [
         crowdin: true,
       },
       {
-        label: "changeLayout",
-        name: "changeLayout",
+        label: "reverse",
+        name: "reverse",
         required: false,
         widget: "boolean",
         crowdin: true,

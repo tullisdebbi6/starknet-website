@@ -58,7 +58,7 @@ export interface ListCardItems {
   start_date_time: string;
   location: string;
   city: string;
-  changeLayout: boolean;
+  reverse: boolean;
   discord: string;
   type_list: {
     type: string;

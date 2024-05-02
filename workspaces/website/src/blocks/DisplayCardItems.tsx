@@ -1,4 +1,4 @@
-import { Box, Flex, Container, LinkBox, Link } from "@chakra-ui/react";
+import { Box, Flex, Container, LinkBox, Link, List } from "@chakra-ui/react";
 import { Heading } from "@ui/Typography/Heading";
 import { slugify } from "@starknet-io/cms-utils/src/index";
 import type { DisplayCardItems } from "@starknet-io/cms-data/src/pages";
@@ -44,8 +44,9 @@ export default function DisplayCardItems({
               bgColor="#0C0C4F"
               color="white"
               _dark={{ color: "#0C0C4F", bgColor: "white" }}
-              padding={1}
-              paddingInline={2}
+              padding={2}
+              fontWeight={600}
+              paddingInline={6}
               borderRadius="6px"
               fontSize={16}
               style={{ textDecoration: "none" }}
@@ -55,7 +56,7 @@ export default function DisplayCardItems({
             </LinkBox>
           )}
         </Flex>
-        <Flex gap={4} direction="column" flex={1}>
+        <List display="flex" flexDirection="column" as="ol" flex={1} gap={4}>
           {card_display_items?.map(({ title, description }, i) => {
             return (
               <DisplayCard
@@ -66,7 +67,7 @@ export default function DisplayCardItems({
               />
             );
           })}
-        </Flex>
+        </List>
       </Container>
     </Box>
   );

@@ -32,7 +32,7 @@ export const DisplayCard = (props: Props) => {
   const { colorMode } = useColorMode();
 
   return (
-    <Box maxW="5xl">
+    <Box as="li" maxW="5xl">
       <Box
         w={{ base: "full" }}
         mx="auto"
@@ -65,7 +65,7 @@ export const DisplayCard = (props: Props) => {
                 title={props.title}
                 objectFit="contain"
                 style={{
-                  filter: `invert(${colorMode === "light" ? 0 : 1})`,
+                  filter: `invert(color:${colorMode === "light" ? 0 : 1})`,
                 }}
               />
             </Box>
