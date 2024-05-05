@@ -29,7 +29,7 @@ export default function ListCardItems({
           <Heading
             color="heading-navy-fg"
             variant="h3"
-            mb="10px"
+            mb="24px"
             id={`toc-${slugify(title)}`}
           >
             {title}

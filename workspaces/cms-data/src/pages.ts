@@ -137,6 +137,7 @@ export interface PageHeaderBlock {
 
 export interface HeroBlock {
   readonly type: "hero";
+  readonly darkTextColor?: boolean;
   readonly title: string;
   readonly description: string;
   readonly variant?:

@@ -10,6 +10,7 @@ blocks:
     buttonUrl: ""
     title: Seed Grant Program
     description: ""
+    darkTextColor: true
   - type: card_display
     title: Application Process
     button: Apply Now

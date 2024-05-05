@@ -16,6 +16,7 @@ import React from "react";
 type Props = {
   title: string;
   description: string | React.ReactNode;
+  darkTextColor?: boolean;
   variant?:
     | "wallets"
     | "block_explorers"
@@ -140,6 +141,7 @@ export const HeroImage = ({
   buttonUrl,
   onButtonClick,
   leftBoxMaxWidth,
+  darkTextColor = false,
 }: Props) => {
   return (
     <Box
@@ -274,6 +276,9 @@ export const HeroImage = ({
                     as="h1"
                     color="heading-navy-fg"
                     variant="h2"
+                    _dark={{
+                      color: darkTextColor ? "#0C0C4F" : "white",
+                    }}
                     size={useBreakpointValue({ base: "md", md: "lg" })}
                   >
                     {title}

@@ -598,6 +598,12 @@ export const blocks = [
         crowdin: true,
       },
       {
+        name: "darkTextColor",
+        widget: "boolean",
+        required: false,
+        crowdin: true,
+      },
+      {
         name: "description",
         widget: "string",
         crowdin: true,

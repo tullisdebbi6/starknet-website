@@ -30,6 +30,7 @@ export default function DisplayCardItems({
             <Heading
               color="heading-navy-fg"
               variant="h3"
+              fontWeight="extrabold"
               mb={{ base: "24px", sm: "10px" }}
               fontSize={24}
               id={`toc-${slugify(title)}`}
@@ -48,7 +49,7 @@ export default function DisplayCardItems({
               fontWeight={600}
               paddingInline={6}
               borderRadius="6px"
-              fontSize={16}
+              fontSize={18}
               style={{ textDecoration: "none" }}
               textAlign="center"
             >

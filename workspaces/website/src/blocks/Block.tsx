@@ -169,6 +169,7 @@ export function Block({
               buttonText={block.buttonText}
               buttonUrl={block.buttonUrl}
               leftBoxMaxWidth={block.leftBoxMaxWidth}
+              darkTextColor={block.darkTextColor}
             />
           );
 
