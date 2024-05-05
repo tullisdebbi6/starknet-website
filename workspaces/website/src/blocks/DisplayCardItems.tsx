@@ -44,12 +44,26 @@ export default function DisplayCardItems({
               href={buttonLink}
               bgColor="#0C0C4F"
               color="white"
+              border="1px"
+              cursor="pointer"
               _dark={{ color: "#0C0C4F", bgColor: "white" }}
+              _hover={{
+                color: "#0C0C4F",
+                bgColor: "white",
+                border: "1px",
+                borderColor: "#0C0C4F",
+                _dark: {
+                  color: "white",
+                  bgColor: "#0C0C4F",
+                  borderColor: "white",
+                },
+              }}
               padding={2}
               fontWeight={600}
               paddingInline={6}
               borderRadius="6px"
               fontSize={18}
+              target="_blank"
               style={{ textDecoration: "none" }}
               textAlign="center"
             >
