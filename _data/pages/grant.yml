@@ -80,8 +80,10 @@ blocks:
           - type: markdown
             body: >-
               If your project is currently part of the Starknet Foundation’s
-              Developer Partnership, you cannot apply for this grant. We do not
-              accept applications related to:
+              Developer Partnership, you cannot apply for this grant. 
+
+
+              We do not accept applications related to:
 
 
               * Gambling
