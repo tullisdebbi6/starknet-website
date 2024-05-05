@@ -79,10 +79,10 @@ blocks:
         blocks:
           - type: markdown
             body: >-
-              Projects currently affiliated with the Starknet Foundation’s
-              Developer Partnership are not eligible to participate in the Seed
-              Grants Program. Ineligible applications include anything related
-              to:
+              If your project is currently part of the Starknet Foundation’s
+              Developer Partnership, you cannot apply for this grant. We do not
+              accept applications related to:
+
 
               * Gambling
 
