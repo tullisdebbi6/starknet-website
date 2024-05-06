@@ -80,3 +80,7 @@ items:
     name: dylan kugler
     access:
       - all
+  - username: thedamooo
+    name: Damian
+    access:
+      - all
