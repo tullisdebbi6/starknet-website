@@ -76,7 +76,7 @@ blocks:
           test them. 
 
 
-          You can become part of the developers’ community, and support it, by joining the [Starknet Discord](https://discord.com/invite/QypNMzkHbc) server.
+          You can become part of the developers’ community, and support it, by joining the [Starknet Discord](https://discord.gg/starknet-community) server.
       - type: accordion_item
         body: SHARP (shared prover) is a service for computing proofs of the correct
           execution of Cairo programs. It can be used to prove the correct
