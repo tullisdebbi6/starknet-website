@@ -2,4 +2,101 @@ id: 685b30b5-2a8d-4aca-9aeb-92b530b0739f
 post_type: article
 isFeatured: false
 title: ""
+toc: true
 published_date: 2024-05-06T13:09:40.732Z
+category:
+  - 757155c6-ce07-49f1-af21-907b7e0b1cb1
+blocks:
+  - type: markdown
+    body: >-
+      Today, the Starknet Foundation is excited to announce the launch of our
+      [Seed Grants Program](https://www.starknet.io/en/ecosystem/grant).  
+
+
+      Designed to provide teams with grants of up to $25,000 USDC, the Seed Grants Program will accelerate and usher in a new wave of cutting-edge dApps, infrastructure, and tooling products across all categories in Web3.
+
+
+      ## Who can qualify? 
+
+
+      The Seed Grants Program aims to support early stage teams with non-dilutive funding to support their go to market efforts.  
+
+
+      This new program is intended for projects that have already developed a minimum viable product (MVP) or proof of concept, but haven’t yet gone to market and acquired a core group of users yet. 
+
+
+      If you or your project satisfy the following criteria, consider applying for Seed Grants:
+
+
+      * actively involved in the Starknet community and / or participated in a Starknet hackathon, builder program, or other entry-level initiative;
+
+      * developed an MVP or proof of concept;
+
+      * willing to submit a demo or links to a proof of concept or MVP; and
+
+      * planning on using or building upon existing Starknet tools and integrations.
+
+
+      ## Grant Amounts
+
+
+      The Seed Grants Program will allocate eligible teams with grants of up to $25,000 USDC for a period of three months. 
+
+
+      ## Application Process
+
+
+      1. Application – apply via our [grants submission form](https://tinyurl.com/starknet-seed-grants) to submit your project.  
+
+
+
+
+      2. Internal Evaluation – an internal committee will assess each application based on potential impact, innovation, milestones, community engagement & track record, and embeddedness with the Starknet ecosystem.
+
+
+
+
+      3. Results – results will be communicated to applicants within two weeks.
+
+
+       
+
+
+      4. Onboarding – successful applicants (Grantees) will need to complete KYC and sign a grant agreement before receiving funding.
+
+
+
+
+      5. Post Grant Check-in – after three months, the Foundation will check-in with Grantees and assess the results. The Grantees should share regular updates (blog posts, videos, AMAs etc) with the team to assist in this process.
+
+
+
+
+      ## Who is Not Eligible
+
+
+      This program is not for mature stage projects.  If your product has been live on mainnet for over three months and/or has a core group of users already, it will not be eligible for a Seed Grant. 
+
+
+      We do not accept applications related to:
+
+
+
+
+      * Gambling
+
+      * Drugs
+
+      * Firearms
+
+      * Illicit trade
+
+      * Money laundering
+
+      * Any criminal activity
+
+
+      # About Starknet 
+
+
+      Starknet is a decentralised layer two building on top of the Ethereum network.  From the beginning, Starknet has led innovation with the invention and application of ZK-STARKs as the first validity-proofs to settle on Ethereum. As we continue forward, we believe Starknet will be the first to reach the high transaction rates necessary for a global scale without sacrificing the blockchain first principles lost in the pursuit of scalability.
