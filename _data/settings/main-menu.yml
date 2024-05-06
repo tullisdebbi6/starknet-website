@@ -91,5 +91,9 @@ items:
             items:
               - custom_internal_link: /content/
                 custom_title: All content
+              - custom_internal_link: https://www.starknet.io/starknet-frequently-asked-questions
+                custom_title: FAQs
+              - custom_internal_link: https://www.starknet.io/en/glossary
+                custom_title: Glossary
               - custom_title: Media kit
                 page: 575c22e7-477f-4a7e-9b90-7406b802176f
