@@ -77,3 +77,7 @@ items:
     name: Dylan Kugler
     access:
       - all
+  - username: thedamooo
+    name: Damian
+    access:
+      - all
