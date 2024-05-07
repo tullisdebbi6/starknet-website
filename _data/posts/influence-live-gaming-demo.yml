@@ -1,0 +1,25 @@
+id: 6acd5837-ff2e-4c56-90d2-9cc468a99aff
+post_type: video
+title: Influence Live Gaming Demo
+seoTitle: Influence Live Gaming Demo
+published_date: 2024-05-07T11:10:50.885Z
+video:
+  url: https://www.youtube.com/live/5eSuPfaAGbo?si=lewKf0QlumeZg20w
+  id: 5eSuPfaAGbo
+  data: null
+image: /assets/screenshot-2024-05-07-at-17.18.59.png
+category:
+  - 8c023bca-b758-4382-9016-dd24c7504ed9
+topic:
+  - 8b8348d4-4efa-4fa3-8c70-41ae6ef338cb
+short_desc: "Discover the exciting universe of Influence, a pioneering onchain
+  game that sets the standard as a premier Autonomous World on the Starknet
+  blockchain. In Influence, players enjoy unparalleled freedom to create their
+  own tools and forge unique paths, unlocking limitless opportunities within the
+  sphere of onchain gaming. "
+seo_desc: Explore Influence, the leading onchain game on the Starknet
+  blockchain, where players experience unprecedented freedom to innovate. Craft
+  your tools and carve unique paths in this Autonomous World, unlocking endless
+  possibilities in onchain gaming
+blocks:
+  - type: markdown
