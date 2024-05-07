@@ -172,10 +172,12 @@ blocks:
               project has evolved and improved since the last time you applied.
           - label: Can candidates apply who have received other funding from StarkWare or
               the Starknet Foundation?
-            body: We encourage existing Starknet funded projects to apply and illustrate
-              what they will use the Seed Grant for.However, please note that
-              mature projects already live on Starknet with a core group of
-              users are not eligible to participate in the Seed Grants Program.
+            body: >-
+              We encourage existing Starknet funded projects to apply and
+              illustrate what they will use the Seed Grant for.
+
+
+              However, please note that mature projects already live on Starknet with a core group of users are not eligible to participate in the Seed Grants Program.
           - label: Will there be a KYC/ KYB process involved?
             body: >-
               Yes, we are legally required to perform KYC/ KYB to verify
