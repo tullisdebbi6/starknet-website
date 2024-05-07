@@ -77,10 +77,6 @@ items:
     name: Roi Webiya
     access:
       - all
-  - username: dylankugler
-    name: dylan kugler
-    access:
-      - all
   - username: thedamooo
     name: Damian
     access:
