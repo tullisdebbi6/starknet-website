@@ -39,10 +39,6 @@ items:
     name: Igal Steklov
     access:
       - all
-  - name: Damian
-    access:
-      - all
-    username: thdamooo
   - username: shadowfaxxxx
     name: Marijke van Engelenburg
     access:
