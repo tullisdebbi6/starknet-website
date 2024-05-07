@@ -1,5 +1,5 @@
 id: 80c9a40d-ac4c-4bee-8c78-dd83667a1a97
-title: Grant
+title: Seed Grant Program
 show_title: false
 seoTitle: Seed Grant Program | Starknet
 seoDescription: The Seed Grant Program is designed to provide teams with grants
@@ -31,7 +31,7 @@ blocks:
               This program has a simplified application and evaluation process, aiming to provide a decision approximately two weeks after submission. 
 
 
-              Seed Grant are intended for projects that have already developed a minimum viable product (MVP) or proof of concept, but haven’t yet gone to market. They are appropriate for projects and teams that meet the following criteria:
+              Seed Grants  are  intended for projects that have already developed a minimum viable product (MVP) or proof of concept, but haven’t yet gone to market. They are appropriate for projects and teams that meet the following criteria:
 
 
               * actively involved in the Starknet community and / or participated in a Starknet hackathon, builder program, or other entry-level initiative;
@@ -81,9 +81,10 @@ blocks:
         blocks:
           - type: markdown
             body: >-
-              This program is not for mature stage projects. If your product has
-              been live on mainnet for over three months and / or has a core
-              group of users already, it will not be eligible for a Seed Grant. 
+              This program is not for mature stage projects. 
+
+
+              If your product has been live on mainnet for over three months and / or has a core group of users already, it will not be eligible for a Seed Grant. 
 
 
               We do not accept applications related to:
@@ -122,7 +123,7 @@ blocks:
         heading: FAQs
         blocks:
           - label: What is the Seed Grant Program?
-            body: The Seed Grants Program is designed to provide teams with grants up to
+            body: The Seed Grant Program is designed to provide teams with grants up to
               $25,000 in USDC in non-dilutive funding to enhance the growth of
               the Starknet ecosystem.
           - label: Who can apply?
@@ -145,9 +146,9 @@ blocks:
           - label: How long will it take to receive a response on my application?
             body: Results will be communicated to applicants within two weeks.
           - label: What types of projects do you provide grants to?
-            body: Any project building on Starknet can be eligible for a grant. We welcome
-              applications from all industries, and there are no restrictions on
-              the types of products we consider.
+            body: There are no restrictions on the types of products we consider.  Any
+              project building on Starknet that is not ineligible can apply for
+              a grant.
           - label: Who is reviewing grant applications?
             body: An internal committee will assess each application.
           - label: Is my application confidential?
@@ -169,7 +170,7 @@ blocks:
             body: Yes, however, you will be asked if you have previously applied to the Seed
               Grants program. If you have, please include details on how your
               project has evolved and improved since the last time you applied.
-          - label: Can candidates apply who have received other funding from Starkware or
+          - label: Can candidates apply who have received other funding from StarkWare or
               the Starknet Foundation?
             body: We encourage existing Starknet funded projects to apply and illustrate
               what they will use the Seed Grant for.However, please note that
