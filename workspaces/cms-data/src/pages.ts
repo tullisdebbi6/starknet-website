@@ -68,7 +68,7 @@ export interface ListCardItems {
 
 export interface DisplayCardItems {
   title: string;
-  selectedIcon?:
+  icon?:
     | "Application"
     | "Internal Evaluation"
     | "Results"
