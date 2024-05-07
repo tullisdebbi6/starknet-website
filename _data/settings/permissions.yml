@@ -5,10 +5,6 @@ items:
   - username: shakedstarkware
     access:
       - posts
-  - username: " thedamooo"
-    access:
-      - jobs
-      - all
   - username: Igal Steklov
     access:
       - all
