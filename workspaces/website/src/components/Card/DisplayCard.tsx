@@ -12,7 +12,7 @@ type Props = {
     | "Internal Evaluation"
     | "Results"
     | "Onboarding"
-    | "Post Grant check-in";
+    | "Post Grant Check-in";
   readonly description?: string;
   readonly index: number;
 } & BoxProps;
@@ -22,7 +22,7 @@ const images = {
   "Internal Evaluation": <InternalEvaluation />,
   Results: <Results />,
   Onboarding: <Onboarding />,
-  "Post Grant check-in": <GrantDeliverables />,
+  "Post Grant Check-in": <GrantDeliverables />,
 };
 
 export const DisplayCard = (props: Props) => {
