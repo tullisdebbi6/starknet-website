@@ -23,9 +23,9 @@ blocks:
         blocks:
           - type: markdown
             body: >-
-              The Seed Grants Program is designed to provide teams with grants
-              up to $25,000 in USDC in non-dilutive funding to enhance the
-              growth of the Starknet ecosystem. 
+              The Seed Grant Program is designed to provide teams with grants up
+              to $25,000 in USDC in non-dilutive funding to enhance the growth
+              of the Starknet ecosystem. 
 
 
               This program has a simplified application and evaluation process, aiming to provide a decision approximately two weeks after submission. 
