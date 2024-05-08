@@ -38,7 +38,7 @@ const NavbarStickyBanner = ({
   return (
     <ClientOnly>
       <Center
-        px={{ base: 2, xl: "unset" }}
+        px={{ base: 4, xl: "unset" }}
         bgColor="snNavy"
         display={isOpen ? "flex" : "none"}
         overflow="hidden"
@@ -53,7 +53,7 @@ const NavbarStickyBanner = ({
             textAlign={{ base: "left", md: "center" }}
             color="white"
             _dark={{ color: "snNavy" }}
-            width={{ base: "unset", sm: "245px" }}
+            width={{ base: "unset", sm: "245px", md: "unset" }}
           >
             {text}
           </Text>
