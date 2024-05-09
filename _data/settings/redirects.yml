@@ -171,3 +171,5 @@ items:
     source: /ja/learn/what-is-starknet
   - destination: /en/learn/what-is-starknet
     source: /ko/learn/what-is-starknet
+  - source: "/ecosystem/security-and-audits "
+    destination: /security-and-audit-tools
