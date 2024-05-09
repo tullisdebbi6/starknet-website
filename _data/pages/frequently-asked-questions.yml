@@ -76,7 +76,7 @@ blocks:
           test them. 
 
 
-          You can become part of the developers’ community, and support it, by joining the [Starknet Discord](https://discord.com/invite/QypNMzkHbc) server.
+          You can become part of the developers’ community, and support it, by joining the [Starknet Discord](https://discord.gg/starknet-community) server.
       - type: accordion_item
         body: SHARP (shared prover) is a service for computing proofs of the correct
           execution of Cairo programs. It can be used to prove the correct
@@ -517,7 +517,7 @@ blocks:
             * Make sure you’ve installed the latest versions of Chrome and all relevant extensions.
 
               * If your wallet extension has been reset and you receive this message, your wallet should ask you to upgrade your account. Follow the wallet’s instructions.
-          * If the above doesn’t work, please contact us on [Discord](https://discord.com/invite/qypnmzkhbc) or [Telegram](https://t.me/+efDitGbILOFmMDNk).
+          * If the above doesn’t work, please contact us on [Discord](https://discord.gg/starknet-community) or [Telegram](https://t.me/+efDitGbILOFmMDNk).
 
 
           The portal doesn’t offer my Ethereum wallet as a connection option.
@@ -535,7 +535,7 @@ blocks:
           The portal doesn’t offer my Starknet wallet as a connection option.
 
 
-          Please contact us on [Discord](https://discord.com/invite/qypnmzkhbc) or [Telegram](https://t.me/+efDitGbILOFmMDNk).
+          Please contact us on [Discord](https://discord.gg/starknet-community) or [Telegram](https://t.me/+efDitGbILOFmMDNk).
       - label: "What is the reason for implementing Sybil-resistance mechanisms in the
           Provisions allocation? "
         body: >-
@@ -651,7 +651,7 @@ blocks:
           We are aware of the fact that there may be scam attempts by creating fake websites and/or social media profiles. We have been and still are taking measures to proactively identify such activities. Users are advised to stay alert and beware of scam attempts.
 
 
-          If you have encountered any suspicious activity or bugs, please report them to the community managers on the [Starknet Discord server](https://starknet.io/discord/).
+          If you have encountered any suspicious activity or bugs, please report them to the community managers on the [Starknet Discord server](https://discord.gg/starknet-community).
   - type: accordion
     heading: Communication and Feedback
     blocks:
@@ -667,8 +667,6 @@ blocks:
           accounts.
       - label: How can I get involved?
         body: >-
-          
-
           We invite everyone to join and be involved in the Starknet community. 
 
 
@@ -713,5 +711,5 @@ blocks:
           forum](https://community.starknet.io/)
       - label: I came across a fraud attempt. How can I warn others against it?
         body: You can report scams and check for other reports of scams in the
-          [scam-report](https://discord.gg/qypnmzkhbc) channel on the [Starknet
+          scam-report channel on the [Starknet
           Discord](https://starknet.io/discord) server.
