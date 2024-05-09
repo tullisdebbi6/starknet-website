@@ -5,9 +5,6 @@ items:
   - username: shakedstarkware
     access:
       - posts
-  - username: " thedamooo"
-    access:
-      - jobs
   - username: Igal Steklov
     access:
       - all
@@ -26,7 +23,7 @@ items:
     name: Nitzan Grossman
     access:
       - all
-  - username: "@dmill123"
+  - username: dmill123
     name: Devorah Miller
     access:
       - all
@@ -38,10 +35,6 @@ items:
     name: Igal Steklov
     access:
       - all
-  - name: Damian
-    access:
-      - all
-    username: thdamooo
   - username: shadowfaxxxx
     name: Marijke van Engelenburg
     access:
@@ -74,5 +67,17 @@ items:
       - all
   - username: rocoscali
     name: Roi Webiya
+    access:
+      - all
+  - username: dylankugler
+    name: Dylan Kugler
+    access:
+      - all
+  - username: thedamooo
+    name: Damian
+    access:
+      - all
+  - username: reachjason
+    name: Jason Rodrigues
     access:
       - all

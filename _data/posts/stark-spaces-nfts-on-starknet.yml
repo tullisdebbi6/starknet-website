@@ -1,0 +1,452 @@
+id: 421cb66d-c06a-427d-9e68-4d9aa6ab5ab1
+post_type: video
+title: STARK Spaces | NFTs on Starknet
+seoTitle: "STARK Spaces: The Future of NFTs on Starknet"
+published_date: 2024-05-08T14:00:55.060Z
+video:
+  url: https://youtube.com/live/nuFIbknB3B8
+  id: nuFIbknB3B8
+  data: null
+image: /assets/everai.jpg
+category:
+  - 8c023bca-b758-4382-9016-dd24c7504ed9
+topic:
+  - 7a538f38-cebc-4e85-9434-0f8840e01d6c
+short_desc: Why build NFT on Starknet? Hear from Briyan, CEO and Co-founder of
+  Everai, Ark Project, on why they chose to build their recently launched NFT
+  collection on Starknet.
+seo_desc: >+
+  Discover why Everai chose Starknet for their latest NFT collection! Join
+  Briyan, CEO and Co-founder of Everai, and Abdel, Exploration Lead at
+  StarkWare, as they reveal the strategic advantages of Starknet’s blockchain
+  technology for NFTs. Learn firsthand about the benefits of scalability,
+  security, and efficiency that influenced their decision. Dive into the future
+  of NFT innovation with expert insights today!"
+
+blocks:
+  - type: markdown
+    body: >-
+      Briyan:
+
+      Okay. I guess it's already working now.
+
+
+      Abdel Stark:
+
+      Okay. I guess we're live. I'm happy to have Briyan from ArkProject and the CEO of Screenshot Labs who built, co-created one of the best NFT collection ever, I would say. I'm a bit biased, but we'll discuss about my bias later. I'm very happy to have you, Briyan. Thank you for joining. How are you?
+
+
+      Briyan:
+
+      Yeah, really good, really good, man. I think it's been a while since we wanted to initiate this movement on Starknet, and super happy to get everything ongoing, and I think the market is getting into a new shape as well, so I think it's pretty exciting times those days, so super happy to see where we're going to go.
+
+
+      Abdel Stark:
+
+      I'm very excited by this potential movement that you started, and I hope that we'll see plenty of collections on Ethereum using the bridge that you created to migrate to Starknet. Can we start by a brief introduction of yourself and also about Everai and Screenshot?
+
+
+      Briyan:
+
+      Yeah.
+
+
+      Abdel Stark:
+
+      Yeah. Let's focus on Everai and Screenshot first, and then we will talk later about the ArkProject. Yeah.
+
+
+      Briyan:
+
+      Yeah, sure, no worries. Maybe an introduction about me and the team. I've been into entrepreneurship for the past eight to 10 years now. Screenshot Labs is basically the third company that I've founded. I've co-founded it with Christophe and Rémi that are my co-founders as well that are not here today on the podcast, but that are doing all the background work on the development side. There is all of the team as well, which is behind. Now it's been three years we've been working into the space, specifically on Ethereum. Everything that we've made so far has been made on Ethereum up until everything that we are doing right now on Starknet.
+
+
+      Abdel Stark:
+
+      Starknet is still part of Ethereum, so that's still \[inaudible 00:02:17].
+
+
+      Briyan:
+
+      No, no, of course. That's right. It's kind of a logical extension of where we wanted to go based on all the problematic \[inaudible 00:02:23].
+
+
+      Abdel Stark:
+
+      You are not leaving Ethereum to go on a shitty L1, so it's not \[inaudible 00:02:27].
+
+
+      Briyan:
+
+      No, no. Well, we took our stance, so that's our point. Throughout the Screenshot Labs life, we've been actually doing a lot of things, and basically we've done consumer applications, one which was called Game of Blocks that was made by Chris and Rémi based in 2017, Everai, which is today the collection that we've bridged from the L1 to the L2, and we've moved toward as well to developing more part of an infrastructural side that we think are key to develop great applications tomorrow on Ethereum and indirectly through Starknet.
+
+
+      Abdel Stark:
+
+      Amazing.
+
+
+      Briyan:
+
+      Yeah.
+
+
+      Abdel Stark:
+
+      Amazing. Can you give me a bit of the story, the inception of the Everai collection? I'm very curious. I know a bit about this story, but I would love if you can share a bit the story.
+
+
+      Briyan:
+
+      Sure. Back in 2021, we had the chance to meet together a group of people that were really amazing. Part of those people, they were part of people that were from Riot Games, there were part of people that were part of the world of anime as well with Mehdi, which is a great artist on the anime and manga side, which is French as well.
+
+
+      Abdel Stark:
+
+      I'm a big fan of Mehdi. Yeah. The guy worked on very famous anime like Dragon Ball Z movie and whatnot. Yeah.
+
+
+      Briyan:
+
+      Yeah, exactly. He's been working on great anime like Dragon Ball Z, Jujutsu Kaisen.
+
+
+      Abdel Stark:
+
+      Naruto as well. Yeah.
+
+
+      Briyan:
+
+      Naruto Shippuden as well. Yeah. Part of my team and us, we've all been part of a big fan of anime and video games and entertainment I think as a whole, and we've successfully gathered this team and trying to create an IP that we were proud of and we thought would be great to start from. That's how we initiated the first steps of the collection with Everai. The purpose was to try to create a story that was expensive and ambitious, and to be starting to do it through the first main character of the story that was kind of those mecha robot that we have right now today as a PFP. We started from there, so we launched this project altogether with Mehdi, all the team and the people from Riot and everything around March 2022. That's how the genesis of everything started.
+
+      We have tried to develop many, many different parts of the story and of the IP in different manners in video games, in the lore, in token economics games, in many different ways, and eventually I think the state of Ethereum back in 2022 was still in my opinion and I think in our opinion in terms of the team pretty early back then to develop really end consumer application. I think me and my team, what we tend to look for is to be able to build things that matters for the masses. There was kind of this eco bubble that we have just touched a few amount of people within the Web3 space and that we wanted to be able to extend towards a much more broad audience, and that's why actually we came out with ArkProject. We were able to do things and interesting things within the Web3 space as we were asking ourselves how can we actually enable more things much faster, and we started to think about those bricks that we thought that we needed to be able to build functional and an application that was looking to be broadening itself.
+
+      That's basically how it started. On the way, of course we've met you I think in end of 2022 around this. Chris and Rémi was a big fan of the tech of Starknet. We met as well Louis that discussed and talked with us about all the stack and everything that was about to come. I think it was pretty early back then, there was just a few amount of people, there was not that much people around in the ecosystem and stuff.
+
+
+      Abdel Stark:
+
+      We met in person for the first time around \[inaudible 00:07:17] Amsterdam, right? Yes.
+
+
+      Briyan:
+
+      Yeah. I met you in Amsterdam the first time, but Chris and Rémi, they made the really first meetup in Paris, the French one, with actually \[inaudible 00:07:26]. It was a pretty funny time back then, but everything has evolved a lot since then. Of course on our way we were always thinking about okay, we think Ethereum anyway is the place where we want to build, but eventually it doesn't answer all our problematics in terms of how do we involve people tomorrow with an easier onboarding when they come to an application, how do we make them pay less fees, how do we create a better overall user experience for everyone.
+
+      All the way, I think even Starknet was pretty early back then, but everything started to get more mature and every month that was passing more people was joining. We have a lot of friends as well in the ecosystem that are all builders at the moment, and Sylve was a part of the early one of them that initially introduced us to the topic and helped us onboard much faster, and you as well. Step by step we figured that actually Starknet would be an amazing place to be trying to put our mindshare for a much more longer term to try to reach our vision to try to onboard much more the masses.
+
+
+      Abdel Stark:
+
+      Yeah. Actually, I think your story is very interesting also because when we talk about Starknet, it's clearly not only about the tech but also the humans behind it and the community and the social layer kind of, because it's pretty common that I heard this kind of story where people comes for the tech and then stay for the community kind of. I think that Gabin from \[inaudible 00:09:08] beautifully said it in an article, but again, it was true for you as well. You met very incredible people that are welcoming and willing to help each other. I like to see a lot of synergies between the projects, and I think we can talk about it more later, but it's pretty natural in Starknet ecosystem to see synergies, collaborations, partnership between the project and the custom because it's like a big family.
+
+      Of course it's hard to scale this culture and whatnot. I want to talk more later about the culture, the cultural aspect, because I think it's fundamental one, not only for blockchain but also for NFT projects in general, and I think that there are actually a lot of correlation in terms of the importance of the cultural aspect for blockchain and for NFTs. Yeah. Can you share also a bit about ... Because recently you created and deployed the ArkProject Bridge to bridge Everai NFTs from the Layer 1 to Starknet, but even before that, there were actually some connections with Everai NFT in the Starknet community. Even before the bridge, many people started to use it as PFP at some point. There was a clash, there were two main schools in terms of NFT, the ducks versus the robots kind of. Yeah. If you can share \[inaudible 00:10:23].
+
+
+      Briyan:
+
+      Yeah, for sure. As soon as we started to think, okay, we think Starknet is a good place for us to expand and to move forward with Everai, at first we wanted to make a bridge just for ourselves and to be able to pass the collection through on Starknet. Meanwhile, while we were doing this, actually we've been in discussion with the team at StarkWare, and it came the eventuality that we could actually not only just build a bridge for ourselves as we wanted to move there, but actually try to \[inaudible 00:11:02] the public good that would be usable by any creators or any people that would like tomorrow to be using it to come over Starknet.
+
+
+      Abdel Stark:
+
+      Actually, if I may, I think that's another interesting aspect in the Starknet community, the fact that it's also pretty common to see people like you who are not doing stuff in a pure selfish manner in a way. Many people like you are investing a lot of time to build a public good infrastructure that anyone can use, and I really like this mindset because it stimulates really this idea of we are all in the same boat, we have the same mission and we work together towards this goal. I really appreciate the fact that you guys are also building with this mindset about it's not about you alone, but it's a bigger custom that is bigger than all of us. I wanted to shout out to you guys for this. Yeah.
+
+
+      Briyan:
+
+      Yeah, for sure. I think you see it when you see all the people within ecosystem, what has been made with the \[inaudible 00:12:03], and I think about \[inaudible 00:12:04] and all those guys and \[inaudible 00:12:06] and stuff, all the people that contributed to this stuff, everyone that is contributing to the open source and the public goods in this, because I think it's quite a natural extent of our culture, I would say. Yeah. I guess we try to do part of our job, and I think what is even cooler right now today is ... We've done it with the bridge, we've done it with Everai, we are about to publicly announce some stuff with ArkProject in the coming weeks, and we have other stuff in mind as well for what's coming into the future, and everything goes into this direction of trying to build decentralized open source infrastructural aspects. I think it's pretty much the same for everyone. It just feels natural somehow today to go into this direction.
+
+
+      Abdel Stark:
+
+      Yeah. We will come back later to the \[inaudible 00:12:53] for the future because I don't want to stay on that. You might have to do some teasing about some stuff later. Can you talk about the ArkProject Bridge that is live for a week or something like that? Can you already share some metrics and numbers?
+
+
+      Briyan:
+
+      Yeah. Across the past, we've been initiating publicly the bridge. Just to be precise, at the moment only the Everai collection is whitelisted because we wanted to do it step by step. The Bridge is at first just open to whitelisting collection. Anyone that wants to use the Bridge at the moment can use the Bridge, and that's what we discussed publicly as well with StarkWare, but I think we can say it publicly. If there was any entity or any people that we think could be enabling someone to cross the Bridge, we could provide him the access to the smart contact so it could enable the whitelisting. It's just for NFTs, the problematic is quite different than for fungible assets because on one side you have the ownership of the contract, and if you pass through the unique asset on the other side, you need as well to have an owner of the smart contact on the other side.
+
+      According to this \[inaudible 00:14:06], and notably Guillaume \[inaudible 00:14:09] that was working with us highlighted those problematics quite early into the Bridge, so we said, "I think the easiest way to go through the Bridge at first would be to make a whitelist mechanism." First we test with security, the safety aspect of it, and as well just to be sure if we wanted to make it permissionless, what it would look like for an NFT bridge. I think it would be a second step if we want to move further into this direction in the future. Yes. Just today to be precise. Yeah.
+
+
+      Abdel Stark:
+
+      By the way, I think an interesting aspect to mention about NFT bridges between Layer 1 and Layer 2 to highlight the superiority of ZK-rollups in comparison to optimistic rollups, the fact that you don't have the dispute period ... As a reminder for people, the dispute period is something that is needed for optimistic rollups to work because basically they assume that everything is okay until proven wrong, so it means that you need to have sufficient time where people can monitor the network and submit some fraud proofs if they detect so. This is in theory because you need to actually have fraud proofs for it to work, but let's say they have fraud proofs activated, then you need this period.
+
+      Usually this period is seven days, so it means that the actual finality when you do some operations between the Layer 1 and the Layer 2 is actually seven days. For ERC-20 bridge for normal tokens, you can bypass that usually because there are some providers in between that can enable to bypass the dispute period, and in exchange you pay a small fee on top so that you can bypass the seven days period, but it works only for fungible tokens. For NFT tokens, it does not work because of the non-fungibility aspect of the NFTs. I just wanted to highlight that, the fact that validity rollups are way better in terms of UX for bridging of NFTs.
+
+
+      Briyan:
+
+      Yeah. Actually, today the whitelist mechanism is on its way. If there is any creators within the ecosystem right now that wanted to bridge through, they can totally do it. We have a forum within the Ark bridge that they just can click on it and we can provide access to them to the bridging mechanism if they were willing to. In terms of statistics so far, I think we have got around close to a thousand Everai that have bridged over to Starknet. As of now, it's fully open so people can bridge there anytime they want. Of course, now our big aspect is to figure out and to start to build all the future of Everai on Starknet, and that's where the Everais are actually would make sense to be on Starknet.
+
+      To be totally frank on this as well, what we've done with the team is that we have incentivized people to bridge as whenever they can because we are going to ... At the moment and during the time of the quest, so it's going to be in the next 10 days that are coming, we are going to reimburse all the fees that they're spending to bridge across Starknet because of course there is fees on Ethereum that need to be paid and the fees on Starknet. The fees on Starknet is insignificant, to be frank, so it's not really important. Depending on the \[inaudible 00:17:54] cost on the Layer 1, it may come from $9 to 25, $30. Yeah.
+
+      That was part of the first phase, the first phase of the Everai bridging to Starknet, and we are going to start building more applications now on Starknet. What we aim to do, and you were talking about this just before, that we aim to develop the cultural aspect within Starknet. I think that's the essence of the Everai IP. You've kind of initiated this as well and we wanted to be part of it. We started to give for free by ourselves, we pay the Everai and we give to every builders within the ecosystems on Everai, and I think that's something that we still want to push. We have given some merch as well to some people, we have given some other stuff.
+
+
+      Abdel Stark:
+
+      The merch was amazing, by the way. I remember the \[inaudible 00:18:57]. It was very beautiful. I want to take inspiration from it actually for something I will start soon by the way, small Alpha, so please give me some contacts about the people you worked with to make this \[inaudible 00:19:09].
+
+
+      Briyan:
+
+      Yeah. We have this here.
+
+
+      Abdel Stark:
+
+      Yeah, yeah. \[inaudible 00:19:11].
+
+
+      Briyan:
+
+      Yeah. No, no, the merch was amazing, and I think that's funny because we are sometimes in the Starknet office in Paris and we see people still wearing it right now after a year and a half, so that's pretty cool. For sure. What we are going to try to do, I think, is we're going to try to keep pushing this community sentiment, this culture within the Starknet ecosystem and to start building use cases that are valuable for the masses as well.
+
+      When you think about an anime or anime style of a PFP and robot and mecha and stuff, what comes to our mind for sure now is to push and to develop the story. We are on our way right now to develop a lot more use cases, and specifically we are about to release a manga in the coming weeks on Starknet. What's going to be nice is the manga is going to highlight the Starknet story, so it's going to be a cool story to relate as part of who we are and what we want to build as a culture. We want to push towards this direction as well.
+
+
+      Abdel Stark:
+
+      Nice. Pretty exciting. You will include some figures of Starknet in the story or something like that?
+
+
+      Briyan:
+
+      At first, we made it agnostic at the moment, so we are going to highlight some projects and companies within the ecosystem that are going to be in the manga, but for sure there is going to be a part of this thing, but people eventually don't want to be looking like themself within the manga or whatever. Here's another part of Everai which is coming in the year. It's going to what we call the pilots. Of course we have the mechs and the robots, and what are going to be related to the pilots, to the mechs, are going to be the pilots. We are going to initiate on Starknet a similar project that looks like Nouns DAO, if you can-
+
+
+      Abdel Stark:
+
+      Can you explain for those who don't know? Yeah.
+
+
+      Briyan:
+
+      Yeah. Basically Nouns DAO generates every day a random PFP or an artwork of ... I would say it's a generative PFP that's going to be generated from ... I don't know when it started exactly, but up until forever because the mechanism is going to be always there. Somehow we've been inspired by this and we thought it would be great to have PFPs within the custom that are highly qualitative, so we don't want to make it generative as such, we wanted to push it and to put it to a much better quality, so what we've decided to do is every once in a while, every once in a week, for example, there is going to be auctions on Starknet and people will be able to bet to try to get to win this auction.
+
+      Whenever they're going to win this auction, what we're going to do is actually we are going to ask them what they want to be looking like in the Everai universe. We are going to have our artists that are going to draw as the people want to be looking like within the Everai universe, the specific characteristic of their character. Every once in a week you're going to be able to bet on an auction and to be able to have one-on-one artwork that was initially with your insights initially and made by our artists. That's what's to come.
+
+
+      Abdel Stark:
+
+      Wow. That's very cool. Okay, great. Can you talk again a bit about the importance of the cultural aspect? How do you see the importance of culture in NFT in general and in blockchain?
+
+
+      Briyan:
+
+      Yeah. Well, I guess there are always different type of people and persona within the blockchain ecosystem, and I think there are some people that relates more to maybe the speculative or the financial aspect, which is 100% fair because blockchain is about creating an alternative economy. \[inaudible 00:23:25] Henri.
+
+
+      Henri:
+
+      Hey.
+
+
+      Abdel Stark:
+
+      Hey, Henri. Welcome, Henri, to the Starknet Foundation. Yeah. I wanted you to join to us because we'll speak also about some stuff related to the foundation and NFTs and whatnot. Thank you, Henri, for joining.
+
+
+      Briyan:
+
+      Thank you, Henri.
+
+
+      Henri:
+
+      I'm happy to be here. Thank you for having me.
+
+
+      Abdel Stark:
+
+      Yes.
+
+
+      Briyan:
+
+      No, no, yeah. About the cultural aspect, I guess the NFT at the moment was more relating to some visual aspects and community-rating sentiments. That's what eventually we wanted to initiate back with Everai, and I think there are some projects that have initiated, the ducks were part of them, a team from \[inaudible 00:24:13] from Starknet ID. I think anyway, every team that are building stuff on Starknet like Realms in France, all the gaming side, Cartridge and stuff. There are plenty of people that are building things that bring other use cases that you may have just on the pure DeFi side that may be related to the financial aspect as well that are going to be really interesting. More recently we saw as well that Starknet is going to push a lot on the gaming within the ecosystem, and hopefully it's going to be \[inaudible 00:24:50].
+
+
+      Abdel Stark:
+
+      Yeah. That's a very good transition to Henri actually, because I wanted Henri to talk about the different initiatives run by the Starknet Foundation around gaming, NFTs and stuff like that. Yeah. Henri, the floor is yours.
+
+
+      Henri:
+
+      Sure thing. Around gaming and NFT in specific, well, around gaming, the foundation announced the creation of the gaming committee a few weeks ago, which is an initiative that gets a bunch of smart people from the ecosystem to think about what can be done to support gaming on the Starknet ecosystem. We've debated a few ideas and hopefully we'll be able to announce various of those in the coming weeks or so. One program has already emerged out of this and it's the Starknet Propulsion program, which it's a program that gives game developers the ability to apply for a grant that is up to $1 million for games that see tractions on Starknet. If you have a game that is live on Starknet or that will be live in the next six months, you can apply for the Propulsion program. The applications are open right now and for the next two weeks, and for that first round we have room for up to 20 games.
+
+      It's a pilot program so we'll monitor the success, we'll see how it works and what people who use the program think about it, and then we'll probably make extension to it and grow it to make sure that people building games on Starknet are able to finance their business and do cool stuff. Aside from that, I will make an announcement of an announcement. We'll have a nice Twitter thread about initiatives for builders, including people doing gaming at the end of this week, so follow the Starknet Foundation Twitter and the Starknet Twitter to get more info on that.
+
+      Also want to say that in general, we are very supportive of people building games, we have a whole set of community initiatives to connect people to other people who build games, and we do give builders grants to people who want to try games. We also finance hackathons and we support, for example, the Dojo Game Jams, and we also support the development of the Dojo framework. Yeah. That's where I would point people building games or looking to build games in the Starknet ecosystem.
+
+
+      Abdel Stark:
+
+      Yeah. We sent the link of the Propulsion program in the chat, so if you are a game builder, please have a look at the link. You have all the announcements on the Starknet Foundation and how to apply. Yeah. Thank you very much, Henri. Yeah. By the way, I wanted to ask you something that I forgot, I think. Never mind, sorry. Yes. We can maybe talk about the features of Starknet that are very powerful to build new use cases for NFTs, so mainly we can probably discuss about account abstraction and potentially appchains as well. I think it can be great to discuss about that. Before, yeah, I remember, I wanted to comment about someone in the chat who said, "I need Henri to open an ASMR YouTube channel for real." Yes. This is not the first time I see that, and it's true, you have such a calm voice, an appeasing voice, and it's always a pleasure to hear you. If at some point you want to do something else aside from Starknet, you know what to do.
+
+
+      Henri:
+
+      Well, if things don't work out, I'll know what to do. My plan is actually not this. I think one of the biggest thing I've lived in games was the GTA radio. They had so many super cool programs, so I'm just waiting for somebody to ship a game that has a radio and I can be the late night DJ radio. Welcome to Radio Starknet, guys. Keep building. Kyro's the shit, man.
+
+
+      Abdel Stark:
+
+      That's amazing. It's another reason for you guys to build such game. Besides the grant, it's an even more interesting reason to do it.
+
+
+      Henri:
+
+      I'll do the voiceover for free. Count me in.
+
+
+      Abdel Stark:
+
+      Nice. Okay, great. Yeah. Talking about the Starknet tech that can enable news cases for NFTs. Yeah. Maybe we can mention before first account abstraction. Henri, I know you are a master to explain account abstraction, so I will let you \[inaudible 00:29:36].
+
+
+      Henri:
+
+      No. It's funny that you go with account abstraction for what it can bring to NFT. I'll mention generative arts or AI to bring. I think there's a lot of stuff in the actual NFT you can build, but I hate to talk about account abstraction. I think in general, how would I explain account abstraction? Account abstraction is a way to dissociate your blockchain identity with your signer. Today when you do an action on Ethereum, you sign with a private key and your identity is your public key, and both are entirely linked. You can't decouple your identity from your private key, and you always have to go through this kind of identity. Account abstraction, instead of forcing you to use one specific logic to link both, it allows you to add whichever your logic you like in the middle through a smart contract.
+
+      Instead of having the authentication process being art-coded, it allows you to customize it, so it allows people to build wallets to design the blockchain experience they want for their users. They can decide if users are entirely sovereign or if they have a way to add somebody to safeguard their account if they need to at some point, they have a way to add delays or limits on the assets that can be spent, they have a way to segment what different players can do with their wallet. What I like most about account abstraction is that mostly it allows developers to meet users where they are instead of having them install exotic wallets or use exotic procedures such as storing a seed phrase to secure their asset, it allows to meet them by using face ID or by using their UB key or whatever process they're used to in their daily lives. I think that's extremely powerful.
+
+
+      Abdel Stark:
+
+      Yeah. I like this way of framing it, meeting the user where they are and what they're used to use. Yeah. That's a very good way to frame it. Yes. Then we can talk also about appchains. You mentioned also some good use cases, Henri, we can talk about them a bit later, but yes, maybe Briyan, first you can explain what are your plans for ArkProject so that we can map the features to some technical aspects. Yeah.
+
+
+      Briyan:
+
+      Yeah, for sure. ArkProject is supposed to be one of the key infrastructure within the ecosystem of Starknet that will enable any builders that want to integrate NFTs within the applications to make it in a much smoother way. When we talk about applications, I can talk about any type of applications, be it a marketplace building in-app directly themself or being it in a wallet. Basically we aim to build all the key element of infrastructure that are required for NFTs to all the builders that will come within the Starknet ecosystem.
+
+      The first thing that we've done obviously more recently was the bridge from the Layer 1 to the Layer 2. The thing that we've been building in parallel as well was the NFT indexer that we've been building. We believe as well that there are of course some improvements to be made on this side and we're currently discussing about those subjects with you guys, but we think that we need to have powerful indexers and APIs to be provided to all the applications so we have a much smoother experience and a much more reactive interfaces within the ecosystem. This is a part of one of the key elements that is required I think both for us and for any application within the extent that we are trying to improve and to be part of.
+
+      Obviously the indexers and the APIs are serving what we define as our decentralized order book, so basically what we do and the key element of our project is that we provide for any applications that want to integrate the marketplace within the applications, the backend order book to be able to do so. We are currently doing this with what we call the Ark chain. It's basically an L2 that we've been building on top of Starknet to be able to manage much easier the cost back then. Today actually, it's much less of a constraint since the blobs obviously, but we have done this as well what we foresee as to be the Starknet ecosystem.
+
+      When I talk about the Starknet ecosystem, I talk about eventually the Layer 2 today, and the appchains are going to be built on top of it as how do we create a coherent global environment within the Starknet ecosystem. Our product is going to be able to provide the liquidity on Starknet L2 and on any application at first, and then within the different type chains that are going to be able to grow. We aim to collaborate with anyone on this and all the key people from \[inaudible 00:34:54], Starknet.id, Carbonable, Cartridge team, the Madara team, so anyone of the ecosystem that are building anything there. That's kind of the big roadmap for us in the coming months.
+
+
+      Abdel Stark:
+
+      Okay. In short, the plan is to have best of both worlds where you have an appchain and to sovereignty that come with it, but you can still solve the potential problems of UX fragmentation and liquidity fragmentation so you can have best of both worlds. Yeah.
+
+
+      Briyan:
+
+      Exactly. It will always depend on the use cases, of course, but I think with our solution we are going to be able to bind privacy with interoperability. That is something that was eventually impossible to do at the moment because you need to make a choice whether you are going to make the acquisition on your appchain directly, or if you want to make it open to everyone. That's kind of the extension that we're going to bring actually to the ecosystem.
+
+
+      Abdel Stark:
+
+      Amazing. That's another example of what we discussed earlier about the collaboration mindset in the ecosystem because you mentioned already a bunch of teams and projects in the ecosystem that are collaborating with you on that. Then to make also the link with the foundation, this is also a way to stimulate this because, for example, one of the important piece in all you said is Madara, so the framework to build the Starknet appchains, and now this is some public good that is maintained by multiple teams through some programs with the foundation. Maybe, Henri, you want to discuss about that, about how it works under the hood, this kind of stuff.
+
+
+      Henri:
+
+      I didn't hear. You cut up a little bit so I couldn't hear. Can you repeat your question please?
+
+
+      Abdel Stark:
+
+      Yeah. The question is about the collaboration mindset in the ecosystem, and specifically about some public good infrastructure pieces. I mentioned Madara as an example of that, and I wanted you to explain how it works under the hood to maintain this public good infrastructure.
+
+
+      Henri:
+
+      Yeah, absolutely. The foundation since its start has been funding open source project building public good infrastructure. The way it goes is usually we work with partners in the ecosystem. StarkWare is a big one, but we also discuss with other key partners such as Nethermind to identify people who do meaningful work in the ecosystem to build some things that other people can build upon. We're looking for people who are building LEGO bricks that can then be helpful to shape product and base product on. Indeed, Madara is such a project. It was started by StarkWare, and then a bunch of other companies and individuals came in and started contributing, and the projects gained a life of its own and the foundation started supporting it in order for it to be a full kit that anyone can use to launch their own chain, operate their own chain, design it for their own needs and with their own constraint.
+
+      In general, we do this for a lot of key open source public goods. I think what we're looking to do for the next year is really to make sure that there's no area that is essential to the \[inaudible 00:38:23] ecosystem that is left out, so we make sure that the key pieces that are needed are looked after. Then we want to make sure that people who build key pieces of infrastructure talk with each other so that the wheel doesn't get reinvented every time and people can capitalize on other people's work. In other words, we have a nice set of LEGO bricks. Now we need to catalog them and try to help people make sense of what brick they can use so that they can combine them and build bigger things. We're going to put a lot of emphasis also on showcasing the work that people are doing in the context of those partnerships because a lot of the time, it's mind-blowing but you don't hear so much about it on crypto Twitter so we want to remedy this. We want people who do good work to be known about. Does that answer your question, Abdel?
+
+
+      Abdel Stark:
+
+      Completely, yeah. It totally answers my question. Thank you very much. Okay. Maybe we can now talk a bit about what's next for Everai. You mentioned a bit about the manga. Yeah. Can you talk about the different initiatives?
+
+
+      Briyan:
+
+      Yeah, sure. As part of what I was saying, the Everai transition from Ethereum Layer 1 to Starknet, as for ambition for us to be able to create more applications on top of Starknet and to leverage the Everai IP and the Everai community there directly, and to obviously leverage the different tech use cases that we've discussed about, the account abstraction, the appchains eventually if we can, the video games environment that we think is going to explode within the next month and years within the ecosystem.
+
+      To be able to keep pushing and keep developing the IP, we've decided to do \[inaudible 00:40:21] of developing a manga. The manga is something that has been started since September last year actually. We've been contributing with our community, and every people that own an Everai is able to participate and to contribute to the choice of the direction of the IP. That's kind of the first key block. We do this actually in collaboration with Snapshot, with their voting system. That's what we've done on the manga. The manga is supposed to be a collaborative IP generated based on the Everai environment.
+
+
+      Abdel Stark:
+
+      Oh, nice. Can you explain concretely how it looks like? Let's say I'm an Everai holder, I want to participate in this. What should I do? Yeah.
+
+
+      Briyan:
+
+      There was a different phase. We have built the first chapter of the manga. It was from September to, I think, November last year. With your Everai you were able to vote on the different part of the story, which character was the main character, which eventually skills he had, which part of the story was unlocking. We had actually as well three different storylines that was possible to be chosen, so the community has chosen one, so this was the first chapter. We are going to do a second chapter, so again, the purpose for us is to involve the community and to enable them to vote and stuff. Then the manga is going to be released so we are going to release this and to display all the people that have been working on it and participating within the IP itself. This is more part of the manga.
+
+      The purpose there is to really develop the narrative and the story there to keep constructing the Starknet culture and relate to something that is really tangible somehow. This is the first stuff that we've done and that we are keep going to do because for us the manga is a really good basis to later build upon video games to build eventually whenever the IP has enough fund, has enough capacity to build an anime, so we can keep pushing the development of the IP and the strength of the IP and the culture of the Starknet ecosystem. That's really what we aim to do with Everai.
+
+      The manga is kind of the emphasis on what we aim to attach Everai to the Starknet ecosystem and to develop it together. That's the first brick that we have. Then the second brick that we plan to do as I told you is the pilots. The pilots are going to be, I think, maybe one of the future, I think, good artwork collection on Starknet so that we are going to have really high qualitative artists that are going to build qualitative artwork for the community. We hope that this is going to be one of the good artwork, really good artwork project 101 that are going to be emerged, but part of as well the ducks as well and to extend on this.
+
+      From then onward, we are going to start trying to figure it out, I guess more collaboration within the ecosystem. We are as well thinking of how can we actually enable video games to maybe leverage our own IP to use it without demanding us and to be decentralized fully so they could use the video games without even asking for us to use the IP. We are doing all this work to really be able that Everai is really usable by all the people within Starknet, and it can be a leverage for them to develop their project, games, community, whatever.
+
+
+      Abdel Stark:
+
+      Okay, nice. That's super cool. Yeah. Again, I hope to see a movement from quality collections on L1 that will follow you and bridge to Starknet. I'm wondering, by the way, how we can help those collections \[inaudible 00:44:32] to do the jump, because even when you have a fully permissionless bridge, what can we do to stimulate this? I don't know. Yeah. It's an open question. \[inaudible 00:44:46].
+
+
+      Henri:
+
+      I think it's the same question when you're asking what any L1 app can gain from going to an L2. To me, I see two main areas where people can do cool stuff on L2 using assets that are on L1. One is UX. You can provide a much better UX to L1 connection, you can provide a secondary market that is much faster and that's just one thing. You can provide just UX that is much better for the same thing, or you can extend your protocol, you can do other stuff that you couldn't do on L1. For a lot of those stuffs, you can probably do it in a transparent way, but if L2s are seen as a way to retain ownership and retain the strongness of the L1 asset and then extend and do way more stuff on L2, think about video games, you have an extension. It's the same game, but there's more features, there's a more rich gameplay, a deeper thing to go inside. I think there's a lot of room to grow here.
+
+
+      Abdel Stark:
+
+      Yeah, definitely. I think it totally makes sense because also those collections, they design their project also with the constraints they had, the constraints of the L1, but now that we unlock and we remove those constraints, then now they can expand their protocol and add more utilities, more stuff on top because they don't have any more problems of scalability and \[inaudible 00:46:15]. Yeah, totally. It's not only about migrating, it's more than that, it's expanding the scope of the projects through migrating to Starknet. Yeah.
+
+      For all NFT projects out there, you have a chance to expand your project and add very cool features. As we discussed a bit about that Starknet is very welcoming of games and whatnot, so there are a lot of natural connections between NFTs and games, so if you want to put very interesting stuff on chain and not just the assets, it's the time to migrate to Starknet and to make this happen. Yeah. Again, we'll help, you support you. As Briyan said, the ecosystem is very welcoming, people are really helping each other, and we see it in action every day. It's very natural to see collaborations between the projects, so if you come on Starknet, you won't be alone, we'll be there to help you, to support you and guide you. Yeah.
+
+
+      Briyan:
+
+      To be actually completely concrete, if there is anyone in the chat or people that are seeing the event right now that are willing to ask questions or that are curious about what's going on in the Starknet ecosystem, \[inaudible 00:47:19] send me a DM personally and I would be more than happy to chat with you guys about what's going. For sure, I think one of the biggest change that has been for it, to be frank, in the ecosystems Starknet is that we came from being by ourselves on Ethereum, even though we were a part of a larger community for sure, but it's true that the culture, and specifically I think we are well-served in France with all the people that are building in our ecosystem, but has emerged a really good and great culture within our ecosystem I think here that are everybody helping each other, everybody is trying to push the boundaries. Yeah. That feels great to not be just by yourself when you build stuff \[inaudible 00:48:13].
+
+
+      Abdel Stark:
+
+      By the way, now that you mention it, I think we're not a good example of the diversity of Starknet here in the call because we have one \[inaudible 00:48:21] that is French, one person from StarkWare that is French, \[inaudible 00:48:24] Foundation that's French, but I can tell you for sure that we have plenty of people in many different places. I can name a few places, but for instance, we have an amazing community of builders in Africa, really amazing. They're so well-organized, they have leader in each country. We have Starknet Nigeria, Starknet Congo, Starknet Kenya. They're organizing a lot of events, hackathons, they are shipping and building like crazy. Starknet India also is big, Starknet Vietnam, we start to see a growing community in LATAM, many places. Even if you don't see it in this call, yeah, Starknet is very diverse across the world and we want to expand and welcome people from all the countries. Yeah. Don't be shy and come. Yeah. I will let you the final word, Briyan and Henri, if you want to say a few words, and then we can wrap it up. I will ask Henri first, what is your call to action to people hearing us from the foundation point of view?
+
+
+      Henri:
+
+      I want to see people come do crazy shit with NFTs on Starknet. I'll give you an example of something that could happen and that I want to see more experimentation with what could be done. The big promise of NFTs was it was those assets that were composable and unique, and right now a lot of what NFTs are is they're unique because of their hash, but not because of their specific properties. A lot of NFTs, they're defined on chain by their hash, but their properties live off chain, they live on servers and that's fine. The issue I have is not necessarily with the storage of chain, it's the fact that the smart contract has no way to use the data that is in those storage because it's way too expensive.
+
+      I'd like to see people just trying to build protocols that allow people to use an L1 asset and import on chain the characteristics that are embedded in the JSON that defines why this NFT is particular, why is your Everai the way it is, what makes it special, what is its exact characteristic, and then leverage that data to build something meaningful. In other word, take data that is dead data on Ethereum and make it alive, revive your NFTs, give them more depth and extend them. I really want people to do just ambitious stuff. Start dreaming again with what you can do with blockchain because you have the capacity, you have the compute at your power. Do things that are inspiring. Try to just redefine what is possible on chain. I think that's the main thing I want to see, and that's the main thing I'm excited about for Starknet because I know those crazy people are out there and I know that some people are going to do crazy stuff. I'm looking forward to all the crazy things that are going to happen in the next few weeks, months and years ahead.
+
+
+      Abdel Stark:
+
+      Amazing, Henri. Yeah. That's a beautiful message. Briyan, you can wrap it up.
+
+
+      Briyan:
+
+      Yeah, sure. Thank you very much first you guys to come over and to discuss and to have enabled us to come aboard this wonderful ecosystem. I'm super happy that we are joining this environment, and I hope we provide an amazing experience to our community, the ecosystem, the Ethereum ecosystem as well over the past weeks and months. If anyone is interested to know more about what we've done and our story and stuff, feel free to reach me out. I'm more than happy to do so, and if I can give some hints as well about any question that you have on building on Starknet. We've been \[inaudible 00:51:54] testing the environment for the past year and a half now, so I think we can provide some good information on this side. Yeah. Thank you very much for everyone to listening, and looking forward to what's coming for us.
+
+
+      Abdel Stark:
+
+      Thank you very much, Briyan. I think we can wrap it up. Thank you everyone for listening to this space. It was a pleasure to have you. Thank you. Bye-bye.
+
+
+      Briyan:
+
+      Thank you everyone. Cheers.
+
+
+      Henri:
+
+      Cheers.
