@@ -14,6 +14,10 @@ export interface Props {
   readonly mainMenu: MainMenu;
   readonly seo: {
     footerText: string;
+    footerDisclaimers: {
+      text: string;
+      link: string;
+    }[];
   };
 }
 
@@ -34,7 +38,7 @@ export const Footer = ({ mainMenu, seo }: Props) => {
           />
         }
         align="stretch"
-        gap={10}
+        gap={{ base: "5", lg: "8" }}
         alignItems="flex-start"
         justifyContent="flex-start"
         direction={{ base: "column", md: "row" }}
@@ -52,9 +56,9 @@ export const Footer = ({ mainMenu, seo }: Props) => {
               // width={mainMenuItem.title === "Learn" ? "350px" : "auto"}
               >
                 {mainMenuItem.columns?.map((column, columnIndex) => (
-                  <Box key={columnIndex}>
+                  <Stack key={columnIndex} spacing="4">
                     {column.blocks?.map((block, blockIndex) => (
-                      <Box key={blockIndex}>
+                      <Stack key={blockIndex} spacing="4">
                         {block.items?.map((item, itemIndex) => {
                           if (
                             item.hide_from_footer ||
@@ -88,9 +92,9 @@ export const Footer = ({ mainMenu, seo }: Props) => {
                             </FooterComponent.FooterLink>
                           );
                         })}
-                      </Box>
+                      </Stack>
                     ))}
-                  </Box>
+                  </Stack>
                 ))}
               </Box>
             )}

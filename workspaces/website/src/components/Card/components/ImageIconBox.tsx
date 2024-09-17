@@ -1,5 +1,5 @@
 import {
-  Box, useBreakpointValue
+  Box//, useBreakpointValue
 } from "@chakra-ui/react";
 import "../style.css";
 import {
@@ -51,8 +51,8 @@ const colors = {
   "blue-default": {
     gradient:
       "linear(180.15deg, gradient-blue-default-a 0.2%, gradient-blue-default-b 105.43%)",
-      iconGradientColor1: "#81D2FF",
-      iconGradientColor2: "#5B5F68"
+      iconGradientColor1: "#E1B0A8",
+      iconGradientColor2: "#D3A2E7"
   },
   cyan: {
     gradient:
@@ -105,8 +105,8 @@ export const ImageIconBox = ({
   title
 }: Props) => {
   let ComponentToRender;
-  const featuredImageSize = useBreakpointValue({ base: '430px', sm: '464px' });
-  const cloudflareImage = `https://starknet.io/cdn-cgi/image/width=${featuredImageSize},height=auto,format=auto${icon}`;
+  // const featuredImageSize = useBreakpointValue({ base: '430px', sm: '464px' });
+  const cloudflareImage = icon; //`https://www.starknet.io/cdn-cgi/image/width=${featuredImageSize},height=auto,format=auto${icon}`;
   const isProd  = import.meta.env.VITE_ALGOLIA_INDEX === "production";
   const iconProps: CardIconProps = {
     gradientColor1: colors[color]?.iconGradientColor1,
@@ -203,6 +203,7 @@ export const ImageIconBox = ({
         height={size === "large" ? "292px" : "263px"}
         overflow="hidden"
         className="card-image"
+        width="calc(100% - 16px)"
         _dark={{ background: variant === "dapp" && "linear-gradient(12.57deg, #2C292B -31.18%, #474D50 102.25%)"}}
       >
         <Box
@@ -234,7 +235,6 @@ export const ImageIconBox = ({
       </Box> : icon &&
       <Box
         padding={variant === "community_card" ? iconProps.communityCardPadding : iconProps.imagePadding}
-        {...(variant === "large_card" && { flex: "100%" })}
       >
         <ComponentToRender
           {...iconProps}

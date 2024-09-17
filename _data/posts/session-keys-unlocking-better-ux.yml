@@ -4,10 +4,13 @@ title: "Session Keys: Unlocking Better UX"
 toc: true
 published_date: 2023-11-15T15:39:21.509Z
 image: /assets/session-keys-account-abstraction-unlocking-better-ux-starknet-v2a-1-.jpg
-category: ecosystem
+category:
+  - ecosystem
 topic:
   - e0c85dbe-08f9-4a19-a8b0-e99852c84cb5
   - account-abstraction
+  - defi
+  - 8b8348d4-4efa-4fa3-8c70-41ae6ef338cb
 short_desc: " Session Keys by StarkWare: Improving user experience and bringing
   scalability, security, and privacy to blockchain"
 seoFocusKeywords:
@@ -56,7 +59,7 @@ blocks:
           In the DeFi realm, the current inconvenience of decentralized exchanges (DEXs) lies in the necessity to approve each transaction individually at various stages. However, with session keys, we can replicate the seamless experience of centralized exchanges (CEXs) without succumbing to their drawbacks. For instance, a user could create a session key valid for an hour, allowing trades of up to $7000 on a decentralized exchange without the need for individual confirmation of each transaction through their wallet. This not only simplifies the process but also contributes to a more user-friendly and efficient DeFi ecosystem. 
 
 
-          ![](https://starkware.co/wp-content/uploads/2023/11/Session-keys-2.png)
+          ![](/assets/sk.png)
 
 
           ### Gaming

@@ -1,24 +1,19 @@
 id: e27b992a-2ca3-4f78-8f11-ae755307f0dc
 title: Home
+seoTitle: "Starknet | Secure scaling technology bringing Ethereum’s benefits worldwide "
 template: landing
 breadcrumbs: false
 page_last_updated: false
 blocks:
+  - type: nav_sticky_banner
+    text: Starknet is the secure scaling technology bringing Ethereum’s benefits to
+      the world.
+    buttonText: See more
+    buttonLink: https://starkware.co
+    isActive: false
   - type: group
     blocks:
       - type: home_hero
-      - size: large
-        color: orange
-        variant: community_card
-        orientation: left
-        withIllustration: false
-        title: Community led.
-        type: image_icon_link_card
-        link:
-          custom_title: Get involved.
-          page: 683db5f6-c625-4fe0-a2af-3c5b6af8c2c9
-        description: This website is a community powered guide to the Starknet ecosystem.
-        columns: "4"
   - type: group
     blocks:
       - size: large
@@ -26,31 +21,80 @@ blocks:
         variant: large_card
         orientation: left
         withIllustration: false
-        title: What is Starknet?
-        icon: /assets/illustration-how-it-works.png
+        title: Unlimited Scale
+        icon: /assets/unlimited-scale.png
         type: image_icon_link_card
         link:
-          page: 93b845d7-5662-4cd4-8c13-3730440880c0
-          custom_title: What is Starknet?
-        description: Starknet is a decentralized layer-2 network that enables Ethereum
-          to scale securely and dapps to achieve unlimited scale for
-          transactions and computation.
+          custom_title: How Starknet Works
+          custom_internal_link: /learn/what-is-starknet
+        description: Starknet utilizes the power of STARK technology to ensure
+          computational integrity. By validating off-chain transactions with
+          advanced math and cryptography, Starknet overcomes Ethereum’s
+          scalability limitations. Starknet is a Validity Rollup that provides
+          unlimited scale while retaining Ethereum’s security and
+          decentralization.
         columns: "4"
+      - type: flex_layout
+        heading_variant: sm
+        blocks:
+          - size: large
+            color: orange
+            variant: large_card
+            orientation: vertical
+            withIllustration: false
+            title: Superior UX
+            icon: /assets/ux-superior.png
+            type: image_icon_link_card
+            link:
+              custom_title: Dive into Native AA
+              custom_internal_link: /content/native-account-abstraction-opening-blockchain-to-new-possibilities
+            description: "Starknet offers efficient and user-friendly experiences by
+              employing Native Account Abstraction. All accounts are smart
+              accounts: their behavior is determined by their developers rather
+              than at the protocol level. This means unparalleled flexibility in
+              account management. Developers can customize their applications
+              beyond protocol constraints to elevate user experience and
+              security.  "
+            columns: "4"
+          - size: large
+            color: orange
+            variant: large_card
+            orientation: vertical
+            withIllustration: false
+            title: Developer Hub
+            icon: /assets/creativity-unleased.png
+            type: image_icon_link_card
+            link:
+              custom_title: Get Started with Starknet
+              custom_internal_link: /developers
+            description: Starknet is home to the fastest-growing Layer 2 (L2) developer
+              community due to its novel approach to scaling Ethereum and making
+              it economically feasible to build even the most complex dApps. The
+              Developer Hub provides a variety of manuals and resources for
+              builders, by builders, on how to get started on Starknet.
+            columns: "4"
+        base: 1
+        md: 2
       - size: large
         color: orange
         variant: large_card
-        orientation: right
+        orientation: left
         withIllustration: false
-        title: How does Starknet scale Ethereum?
-        icon: /assets/illustration-scaling.png
+        title: Creativity Unleashed
+        icon: /assets/thriving-ecosystem.png
         type: image_icon_link_card
         link:
-          page: 93b845d7-5662-4cd4-8c13-3730440880c0
-          custom_title: How does it work
-        description: 'Starknet uses math and cryptography to securely scale Ethereum. It
-          operates as a Validity-rollup (or ZK-rollup): it "bundles" many
-          transactions and "rolls" them to Ethereum as a single transaction.'
+          custom_title: Build with Cairo
+          custom_external_link: https://www.cairo-lang.org/
+        description: Starknet devs are empowered to code solutions that make a
+          difference. Cairo, Starknet’s native smart contract language, allows
+          developers to push the boundaries of their applications by allowing
+          them to code any kind of business logic. Building with Cairo,
+          developers can let their vision reach its full potential on Starknet.
         columns: "4"
+  - type: newsletter_popup
+    title: Starknet Devs Newsletter
+    description: Stay up to date on Starknet news and version updates.
   - type: flex_layout
     heading_variant: h3
     base: 1
@@ -60,10 +104,10 @@ blocks:
     blocks:
       - type: image_icon_link_card
         color: blue-default
-        title: "Developer documentation "
+        title: Starknet Docs
         description: Read the official Starknet documentation to build your first
           contracts and dapps.
-        icon: /assets/docs.svg
+        icon: /assets/read-docs.svg
         link:
           custom_external_link: https://docs.starknet.io/
           custom_title: View docs
@@ -119,7 +163,7 @@ blocks:
           ecosystem.
         icon: /assets/deposit-withdraw.svg
         link:
-          custom_title: View options
+          custom_title: View Bridges & on-ramps
           page: 5ddb6717-0d91-4d20-a18e-5bc487d54b57
         withIllustration: true
   - type: community_events
@@ -140,10 +184,10 @@ blocks:
         size: large
         withIllustration: false
         color: null
-        title: What is STARK?
+        title: What is STRK?
         link:
           custom_title: View
-          custom_internal_link: /learn/frequently-asked-questions#toc-cairo
+          custom_internal_link: /learn/starknet-frequently-asked-questions#toc-starknet-token-strk
       - type: image_icon_link_card
         variant: icon_link_card
         size: large
@@ -152,7 +196,7 @@ blocks:
         title: What is Cairo?
         link:
           custom_title: View
-          custom_internal_link: /learn/frequently-asked-questions#toc-cairo
+          custom_internal_link: /learn/starknet-frequently-asked-questions#toc-cairo
       - type: image_icon_link_card
         variant: icon_link_card
         size: large
@@ -162,7 +206,12 @@ blocks:
         link:
           custom_title: View
           page: 93b845d7-5662-4cd4-8c13-3730440880c0
-    base: 2
-    md: 4
+    base: 1
+    md: 2
     lg: 4
     heading: FAQs
+  - type: nav_sticky_banner
+    isActive: true
+    text: Master Cairo in our 6-Week Free Online Basecamp!
+    buttonText: Sign Up Now
+    buttonLink: https://us06web.zoom.us/webinar/register/WN_WFNDdyS2TbSqxgNqaqF1Kg#/registration

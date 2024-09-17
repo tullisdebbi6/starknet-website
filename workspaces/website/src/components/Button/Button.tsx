@@ -6,6 +6,7 @@ type props = {
   variant:
     | "solid"
     | "outline"
+    | "outlineFull"
     | "outlineLight"
     | "outlineRounded"
     | "ghost"
@@ -14,8 +15,12 @@ type props = {
     | "switch"
     | "filter"
     | "filterActive"
+    | "smallFilter"
+    | "smallFilterActive"
     | "category"
-    | "icon";
+    | "categoryVertical"
+    | "icon"
+    | "gradient";
   children: React.ReactNode;
   toId?: string;
   href?: string;

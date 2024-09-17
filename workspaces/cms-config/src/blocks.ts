@@ -56,7 +56,7 @@ export const ambassadorTags = [
     label: "Tag",
     name: "tag",
     widget: "select",
-    options: ["Content generator", "Event organizer", "Event speaker"]
+    options: ["Content generator", "Event organizer", "Event speaker"],
   },
 ] satisfies CmsField[];
 
@@ -89,19 +89,19 @@ export const ambassador = [
     label: "Website url",
     name: "website",
     widget: "string",
-    crowdin: false
+    crowdin: false,
   },
   {
     label: "Twitter handle",
     name: "twitter",
     widget: "string",
-    crowdin: false
+    crowdin: false,
   },
   {
     label: "Discord",
     name: "discord",
     widget: "string",
-    crowdin: false
+    crowdin: false,
   },
   {
     label: "Tags",
@@ -111,7 +111,7 @@ export const ambassador = [
     crowdin: true,
     required: false,
     index_file: "",
-    meta: true
+    meta: true,
   },
 ] satisfies CmsField[];
 
@@ -141,7 +141,7 @@ export const cardListItem = [
     required: false,
     widget: "string",
     index_file: "",
-    meta: false
+    meta: false,
   },
   {
     label: "Twitter",
@@ -149,7 +149,7 @@ export const cardListItem = [
     required: false,
     widget: "string",
     index_file: "",
-    meta: false
+    meta: false,
   },
   {
     label: "Start date time",
@@ -157,7 +157,7 @@ export const cardListItem = [
     required: false,
     widget: "string",
     index_file: "",
-    meta: false
+    meta: false,
   },
   {
     label: "Location",
@@ -165,7 +165,7 @@ export const cardListItem = [
     required: false,
     widget: "string",
     index_file: "",
-    meta: false
+    meta: false,
   },
   {
     label: "City",
@@ -173,7 +173,7 @@ export const cardListItem = [
     required: false,
     widget: "string",
     index_file: "",
-    meta: false
+    meta: false,
   },
   {
     label: "Country",
@@ -181,7 +181,7 @@ export const cardListItem = [
     required: false,
     widget: "string",
     index_file: "",
-    meta: false
+    meta: false,
   },
   {
     label: "Discord",
@@ -189,7 +189,7 @@ export const cardListItem = [
     required: false,
     widget: "string",
     index_file: "",
-    meta: false
+    meta: false,
   },
   {
     label: "Type list",
@@ -208,7 +208,7 @@ export const cardListItem = [
         name: "url",
         widget: "string",
         crowdin: false,
-      }
+      },
     ],
   },
   {
@@ -217,7 +217,7 @@ export const cardListItem = [
     required: false,
     widget: "string",
     index_file: "",
-    meta: false
+    meta: false,
   },
   {
     label: "Recap",
@@ -242,35 +242,64 @@ export const cardListItem = [
         name: "isExternal",
         widget: "boolean",
         crowdin: false,
-      }
+      },
     ],
     index_file: "",
-    meta: false
+    meta: false,
+  },
+] satisfies CmsField[];
+
+export const cardDisplayItem = [
+  {
+    label: "Title",
+    name: "title",
+    widget: "string",
+    crowdin: true,
+  },
+  {
+    label: "Description",
+    name: "description",
+    widget: "string",
+    crowdin: false,
+  },
+  {
+    label: "Icon",
+    required: false,
+    name: "icon",
+    widget: "select",
+    options: [
+      "Application",
+      "Internal Evaluation",
+      "Results",
+      "Onboarding",
+      "Post Grant Check-in",
+    ],
+    crowdin: false,
   },
 ] satisfies CmsField[];
 
 const videoChapterFields = [
   {
     crowdin: true,
-    label: 'Title',
-    name: 'title',
+    label: "Title",
+    name: "title",
     required: true,
-    widget: 'string'
+    widget: "string",
   },
   {
     crowdin: true,
-    label: 'Description',
-    name: 'description',
+    label: "Description",
+    name: "description",
     required: true,
-    widget: 'string'
+    widget: "string",
   },
   {
     crowdin: true,
-    label: 'Content',
-    name: 'content',
+    label: "Content",
+    name: "content",
     required: true,
-    widget: 'markdown'
-  }
+    widget: "markdown",
+  },
 ] satisfies CmsField[];
 
 export const blocks = [
@@ -298,7 +327,7 @@ export const blocks = [
       {
         name: "description",
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
     ],
   },
@@ -332,7 +361,7 @@ export const blocks = [
       {
         name: "title",
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
       {
         name: "link",
@@ -364,7 +393,7 @@ export const blocks = [
           { label: "Icon link card", value: "icon_link_card" },
           { label: "Dapp", value: "dapp" },
           { label: "Large card", value: "large_card" },
-          { label: "Community card", value: "community_card" }
+          { label: "Community card", value: "community_card" },
         ],
       },
       {
@@ -375,7 +404,7 @@ export const blocks = [
         required: false,
         options: [
           { label: "Large", value: "large" },
-          { label: "Small", value: "small" }
+          { label: "Small", value: "small" },
         ],
       },
       {
@@ -388,12 +417,12 @@ export const blocks = [
       {
         name: "title",
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
       {
         name: "description",
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
       {
         name: "link",
@@ -402,7 +431,7 @@ export const blocks = [
       },
       {
         name: "icon",
-        widget: "image"
+        widget: "image",
       },
       {
         name: "color",
@@ -416,13 +445,14 @@ export const blocks = [
           "cyan",
           "orange",
           "pink",
-          "grey"
+          "grey",
         ],
         default: "orange",
       },
       {
         name: "columns",
-        label: "Columns (number of cards per row, works only for icon_link_card)",
+        label:
+          "Columns (number of cards per row, works only for icon_link_card)",
         widget: "select",
         default: "4",
         required: false,
@@ -434,8 +464,20 @@ export const blocks = [
         widget: "select",
         default: "left",
         required: false,
-        options: ["left", "right"],
-      }
+        options: ["left", "right", "vertical"],
+      },
+    ],
+  },
+  {
+    name: "youtube",
+    label: "Youtube",
+    widget: "object",
+    fields: [
+      {
+        name: "videoId",
+        widget: "string",
+        crowdin: true,
+      },
     ],
   },
   {
@@ -448,7 +490,7 @@ export const blocks = [
         name: "title",
         required: false,
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
       {
         label: "Ambassador",
@@ -458,9 +500,9 @@ export const blocks = [
         crowdin: true,
         required: true,
         index_file: "",
-        meta: true
+        meta: true,
       },
-    ]
+    ],
   },
   {
     name: "card_list",
@@ -472,14 +514,28 @@ export const blocks = [
         name: "title",
         required: false,
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
       {
         label: "Description",
         name: "description",
         required: false,
         widget: "string",
-        crowdin: true
+        crowdin: true,
+      },
+      {
+        label: "reverse",
+        name: "reverse",
+        required: false,
+        widget: "boolean",
+        crowdin: true,
+      },
+      {
+        label: "show icons",
+        name: "showIcons",
+        required: false,
+        widget: "boolean",
+        crowdin: true,
       },
       {
         name: "randomize",
@@ -496,9 +552,47 @@ export const blocks = [
         crowdin: true,
         required: true,
         index_file: "",
-        meta: true
+        meta: true,
       },
-    ]
+    ],
+  },
+  {
+    name: "card_display",
+    label: "Cards display",
+    widget: "object",
+    fields: [
+      {
+        label: "Title",
+        name: "title",
+        required: false,
+        widget: "string",
+        crowdin: true,
+      },
+      {
+        label: "button",
+        name: "button",
+        required: false,
+        widget: "string",
+        crowdin: true,
+      },
+      {
+        label: "button link",
+        name: "buttonLink",
+        required: false,
+        widget: "string",
+        crowdin: true,
+      },
+      {
+        label: "Card display items",
+        name: "card_display_items",
+        widget: "list",
+        fields: cardDisplayItem,
+        crowdin: true,
+        required: true,
+        index_file: "",
+        meta: true,
+      },
+    ],
   },
   {
     name: "hero",
@@ -508,12 +602,18 @@ export const blocks = [
       {
         name: "title",
         widget: "string",
-        crowdin: true
+        crowdin: true,
+      },
+      {
+        name: "darkTextColor",
+        widget: "boolean",
+        required: false,
+        crowdin: true,
       },
       {
         name: "description",
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
       {
         name: "variant",
@@ -529,6 +629,7 @@ export const blocks = [
           "community",
           "nodes_and_services",
           "security",
+          "seed_grant_program",
         ],
         default: "learn",
       },
@@ -537,21 +638,21 @@ export const blocks = [
         label: "Button text",
         required: false,
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
       {
         name: "buttonUrl",
         label: "Button url",
         required: false,
         widget: "string",
-        crowdin: false
+        crowdin: false,
       },
       {
         name: "leftBoxMaxWidth",
         label: "Left box max width",
         required: false,
         widget: "number",
-        crowdin: false
+        crowdin: false,
       },
     ],
   },
@@ -565,7 +666,7 @@ export const blocks = [
         label: "Heading",
         required: false,
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
       {
         name: "listSize",
@@ -617,13 +718,13 @@ export const blocks = [
                 name: "label",
                 label: "Label",
                 widget: "string",
-                crowdin: true
+                crowdin: true,
               },
               {
                 name: "boldLabel",
                 label: "Bold Label",
                 widget: "string",
-                crowdin: true
+                crowdin: true,
               },
             ],
           },
@@ -636,13 +737,13 @@ export const blocks = [
                 name: "url",
                 label: "URL",
                 widget: "string",
-                crowdin: false
+                crowdin: false,
               },
               {
                 name: "title",
                 label: "Title",
                 widget: "string",
-                crowdin: true
+                crowdin: true,
               },
               {
                 name: "displayTitle",
@@ -666,7 +767,7 @@ export const blocks = [
         label: "Heading",
         required: false,
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
       {
         name: "blocks",
@@ -677,7 +778,7 @@ export const blocks = [
             name: "label",
             label: "Label",
             widget: "string",
-            crowdin: true
+            crowdin: true,
           },
           {
             name: "body",
@@ -687,59 +788,76 @@ export const blocks = [
         ],
       },
     ],
-  }, {
+  },
+  {
     name: "video_section",
     label: "Education video section",
     widget: "object",
     fields: [
       {
-        crowdin: true,
-        label: 'Chapter 1',
-        name: 'scaling-eth',
-        widget: 'object',
-        fields: videoChapterFields
+        label: "Chapter description full width",
+        name: "chapterDescriptionFullWidth",
+        widget: "boolean",
+        default: false,
+        required: false,
+      },
+      {
+        label: "Chapters playlist on bottom of video desktop",
+        name: "playlistOnBottom",
+        widget: "boolean",
+        default: true,
+        required: false,
       },
       {
         crowdin: true,
-        label: 'Chapter 2',
-        name: 'sequencer',
-        widget: 'object',
-        fields: videoChapterFields
+        label: "Chapter 1",
+        name: "scaling-eth",
+        widget: "object",
+        fields: videoChapterFields,
       },
       {
         crowdin: true,
-        label: 'Chapter 3',
-        name: 'prover',
-        widget: 'object',
-        fields: videoChapterFields
+        label: "Chapter 2",
+        name: "sequencer",
+        widget: "object",
+        fields: videoChapterFields,
       },
       {
         crowdin: true,
-        label: 'Chapter 4',
-        name: 'eth-settlement',
-        widget: 'object',
-        fields: videoChapterFields
-      }
-    ]
-  }, {
+        label: "Chapter 3",
+        name: "prover",
+        widget: "object",
+        fields: videoChapterFields,
+      },
+      {
+        crowdin: true,
+        label: "Chapter 4",
+        name: "eth-settlement",
+        widget: "object",
+        fields: videoChapterFields,
+      },
+    ],
+  },
+  {
     name: "newsletter_popup",
     label: "Newsletter Popup",
     widget: "object",
     fields: [
       {
         crowdin: true,
-        label: 'Title',
-        name: 'title',
-        widget: 'string'
+        label: "Title",
+        name: "title",
+        widget: "string",
       },
       {
         crowdin: true,
-        label: 'Description',
-        name: 'description',
-        widget: 'string'
+        label: "Description",
+        name: "description",
+        widget: "string",
       },
-    ]
-  }, {
+    ],
+  },
+  {
     name: "ordered_block",
     label: "Ordered Block",
     widget: "object",
@@ -752,7 +870,7 @@ export const blocks = [
           {
             name: "title",
             widget: "string",
-            crowdin: true
+            crowdin: true,
           },
           {
             name: "body",
@@ -763,7 +881,86 @@ export const blocks = [
       },
     ],
   },
+  {
+    name: "nav_sticky_banner",
+    label: "Sticky Banner Under Nav",
+    widget: "object",
+    fields: [
+      {
+        name: "text",
+        label: "Text",
+        widget: "string",
+        crowdin: true,
+      },
+      {
+        name: "buttonText",
+        label: "ButtonText",
+        widget: "string",
+        crowdin: true,
+      },
+      {
+        name: "buttonLink",
+        label: "buttonLink",
+        widget: "string",
+        crowdin: true,
+      },
+      {
+        name: "isActive",
+        label: "IsActive",
+        widget: "boolean",
+        default: true,
+      },
+    ],
+  },
 ] satisfies CmsFieldList["types"];
+
+const flexLayout = {
+  name: "flex_layout",
+  label: "Flex layout",
+  widget: "object" as "object",
+  fields: [
+    {
+      name: "base",
+      widget: "number",
+      required: false,
+    },
+    {
+      name: "md",
+      widget: "number",
+      required: false,
+    },
+    {
+      name: "lg",
+      widget: "number",
+      required: false,
+    },
+    {
+      name: "xl",
+      widget: "number",
+      required: false,
+    },
+    {
+      name: "heading",
+      required: false,
+      widget: "string",
+      crowdin: true,
+    },
+    {
+      name: "heading_variant",
+      widget: "select",
+      options: ["h1", "h2", "h3", "h4", "h5", "h6"],
+      required: false,
+      default: "sm",
+    },
+    {
+      name: "blocks",
+      label: "Blocks",
+      widget: "list",
+      types: blocks,
+      default: [],
+    },
+  ],
+} satisfies CmsField;
 
 export const topLevelBlocks = [
   {
@@ -775,7 +972,7 @@ export const topLevelBlocks = [
         name: "blocks",
         label: "Blocks",
         widget: "list",
-        types: blocks,
+        types: [...blocks, flexLayout],
         default: [],
       },
     ],
@@ -794,7 +991,7 @@ export const topLevelBlocks = [
         name: "blocks",
         label: "Blocks",
         widget: "list",
-        types: blocks,
+        types: [...blocks, flexLayout],
         default: [],
       },
     ],
@@ -808,71 +1005,44 @@ export const topLevelBlocks = [
         label: "Heading",
         name: "heading",
         widget: "string",
-        crowdin: true
+        crowdin: true,
       },
       {
         label: "Heading variant",
         name: "heading_variant",
         widget: "select",
         options: ["h2", "h3", "h4", "h5", "h6"],
-        default: 'h2',
-        crowdin: false
+        default: "h2",
+        crowdin: false,
       },
       {
         name: "blocks",
         label: "Blocks",
         widget: "list",
-        types: blocks,
+        types: [...blocks, flexLayout],
         default: [],
       },
     ],
   },
   {
-    name: "flex_layout",
-    label: "Flex layout",
+    name: "side_sticky_banner",
+    label: "Side Sticky Banner",
     widget: "object",
     fields: [
-      {
-        name: "base",
-        widget: "number",
-        required: false,
-      },
-      {
-        name: "md",
-        widget: "number",
-        required: false,
-      },
-      {
-        name: "lg",
-        widget: "number",
-        required: false,
-      },
-      {
-        name: "xl",
-        widget: "number",
-        required: false,
-      },
-      {
-        name: "heading",
-        required: false,
-        widget: "string",
-        crowdin: true
-      },
-      {
-        name: "heading_variant",
-        widget: "select",
-        options: ["h1", "h2", "h3", "h4", "h5", "h6"],
-        required: false,
-        default: "sm",
-      },
       {
         name: "blocks",
         label: "Blocks",
         widget: "list",
-        types: blocks,
+        types: [...blocks, flexLayout],
         default: [],
+      },
+      {
+        name: "isActive",
+        widget: "boolean",
+        default: false,
       },
     ],
   },
+  flexLayout,
   ...blocks,
 ] satisfies CmsFieldList["types"];

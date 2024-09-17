@@ -1,6 +1,10 @@
 import { LinkData } from "./settings/main-menu";
 import { defaultLocale } from "./i18n/config";
-import { getFirst, getJSON, getShuffledArray } from "@starknet-io/cms-utils/src/index";
+import {
+  getFirst,
+  getJSON,
+  getShuffledArray,
+} from "@starknet-io/cms-utils/src/index";
 import type { Meta } from "@starknet-io/cms-utils/src/index";
 
 export interface MarkdownBlock {
@@ -40,6 +44,11 @@ export interface ImageIconLinkCardBlock {
     | "grey";
 }
 
+export interface YoutubeBlock {
+  readonly type: "youtube";
+  readonly videoId: string;
+}
+
 export interface ListCardItems {
   title: string;
   description: string;
@@ -57,12 +66,35 @@ export interface ListCardItems {
   type: string;
 }
 
+export interface DisplayCardItems {
+  title: string;
+  icon?:
+    | "Application"
+    | "Internal Evaluation"
+    | "Results"
+    | "Onboarding"
+    | "Post Grant Check-in";
+  description: string;
+  image?: string;
+}
+
 export interface ListCardItemsBlock {
   readonly type: "card_list";
   readonly title: string;
   readonly card_list_items: ListCardItems[];
   readonly noOfItems: number;
   readonly description: string;
+  randomize?: boolean;
+  reverse?: boolean;
+  showIcons?: boolean;
+}
+export interface DisplayCardItemsBlock {
+  readonly type: "card_display";
+  readonly title: string;
+  readonly card_display_items: DisplayCardItems[];
+  readonly noOfItems: number;
+  readonly button: string;
+  readonly buttonLink: string;
   randomize?: boolean;
 }
 
@@ -106,6 +138,7 @@ export interface PageHeaderBlock {
 
 export interface HeroBlock {
   readonly type: "hero";
+  readonly darkTextColor?: boolean;
   readonly title: string;
   readonly description: string;
   readonly variant?:
@@ -128,6 +161,15 @@ export interface HomeHeroBlock {
     readonly heroText: string;
   };
 }
+
+export interface NavStickyBannerBlock {
+  readonly type: "nav_sticky_banner";
+  readonly text: string;
+  readonly buttonText: string;
+  readonly buttonLink: string;
+  readonly isActive: boolean;
+}
+
 export interface LinkListBlock {
   readonly type: "link_list";
   readonly heading?: string;
@@ -147,17 +189,19 @@ export interface OrderedBlock {
 }
 
 export interface ChapterInfo {
-  content: MarkdownBlock['body'];
+  content: MarkdownBlock["body"];
   subtitle: string;
   title: string;
-};
+}
 
 export interface VideoSectionBlock {
   readonly type: "video_section";
-  readonly 'scaling-eth': ChapterInfo;
+  readonly "scaling-eth": ChapterInfo;
   readonly sequencer: ChapterInfo;
   readonly prover: ChapterInfo;
-  readonly 'eth-settlement': ChapterInfo;
+  readonly "eth-settlement": ChapterInfo;
+  readonly chapterDescriptionFullWidth: boolean;
+  readonly playlistOnBottom: boolean;
 }
 
 export interface NewsletterBlock {
@@ -173,13 +217,16 @@ export type Block =
   | CommunityEventsBlock
   | BasicCardBlock
   | ImageIconLinkCardBlock
+  | YoutubeBlock
   | HeroBlock
   | HomeHeroBlock
+  | NavStickyBannerBlock
   | LinkListBlock
   | PageHeaderBlock
   | AccordionBlock
   | OrderedBlock
   | ListCardItemsBlock
+  | DisplayCardItemsBlock
   | AmbassadorsListBlock
   | VideoSectionBlock
   | NewsletterBlock;
@@ -210,7 +257,12 @@ export interface HeadingContainerBlock {
   readonly blocks: readonly Block[];
 }
 
-export type TopLevelBlock = Block | FlexLayoutBlock | GroupBlock | Container | HeadingContainerBlock;
+export type TopLevelBlock =
+  | Block
+  | FlexLayoutBlock
+  | GroupBlock
+  | Container
+  | HeadingContainerBlock;
 
 export interface Page extends Meta {
   readonly id: string;
@@ -218,9 +270,10 @@ export interface Page extends Meta {
   readonly link: string;
   readonly title: string;
   readonly show_title?: boolean;
-  readonly toc?: boolean;
+  readonly hideToc?: boolean;
   readonly template: "landing" | "content" | "narrow content";
   readonly tocCustomTitle?: string;
+  readonly hidden_page: boolean;
   readonly breadcrumbs: boolean;
   readonly breadcrumbs_data?: readonly Omit<Page, "blocks">[];
   readonly pageLastUpdated: boolean;
@@ -229,20 +282,19 @@ export interface Page extends Meta {
 }
 
 const getPageWithRandomizedData = (data: Page): Page => {
-  const randomizedData = {...data}
+  const randomizedData = { ...data };
   randomizedData.blocks?.forEach((block: TopLevelBlock) => {
-
-    if (block.type === 'link_list' && block.randomize) {
+    if (block.type === "link_list" && block.randomize) {
       //@ts-expect-error
       block.blocks = getShuffledArray(block.blocks || []);
-    } else if (block.type === 'card_list' && block.randomize) {
+    } else if (block.type === "card_list" && block.randomize) {
       //@ts-expect-error
       block.card_list_items = getShuffledArray(block.card_list_items || []);
     }
-  })
+  });
 
-  return randomizedData
-}
+  return randomizedData;
+};
 export async function getPageBySlug(
   slug: string,
   locale: string,
@@ -256,7 +308,7 @@ export async function getPageBySlug(
       )
     );
 
-    return getPageWithRandomizedData(data)
+    return getPageWithRandomizedData(data);
   } catch (cause) {
     throw new Error(`Page not found! ${slug}`, {
       cause,
@@ -272,7 +324,8 @@ export async function getPageById(
   try {
     return await getFirst(
       ...[locale, defaultLocale].map(
-        (value) => async () => getJSON("data/pages/" + value + "/" + id, context)
+        (value) => async () =>
+          getJSON("data/pages/" + value + "/" + id, context)
       )
     );
   } catch (cause) {

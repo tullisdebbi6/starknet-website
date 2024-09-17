@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies
  */
@@ -22,8 +21,8 @@ export type CategoryTabItem = {
 
 export type CategoryTabsProps = {
   items: CategoryTabItem[];
-  activeItemId: string;
-  onTabClick?: (id: string) => void;
+  currentChapter: { id: string };
+  onChapterChange: (id: string) => void;
 };
 
 /**
@@ -32,8 +31,8 @@ export type CategoryTabsProps = {
 
 export const CategoryTabs = ({
   items,
-  activeItemId,
-  onTabClick,
+  currentChapter,
+  onChapterChange,
 }: CategoryTabsProps) => {
   return (
     <Box
@@ -47,22 +46,27 @@ export const CategoryTabs = ({
         sx={{ overflowX: "auto" }}
         gap="24px"
         width="100%"
-        padding={'0 24px'}
+        padding={"0 24px"}
+        role="tablist"
+        aria-orientation="horizontal"
       >
-        {items.map((item) => {
+        {items.map((item, index) => {
           return (
-            <Box>
-              <Button
-                as={item.link ? "a" : "button"}
-                href={item.link}
-                isActive={item.id === activeItemId}
-                onClick={() => onTabClick?.(item.id)}
-                variant="category"
-                padding={'24px 12px'}
-              >
-                {item.label}
-              </Button>
-            </Box>
+            <Button
+              id={item.id}
+              key={item.id}
+              role="tab"
+              aria-selected={item.id === currentChapter.id}
+              aria-controls={`${item.id}-content`}
+              as={item.link ? "a" : "button"}
+              href={item.link}
+              isActive={item.id === currentChapter.id}
+              onClick={() => onChapterChange(item.id)}
+              variant="category"
+              padding={"24px 12px"}
+            >
+              {item.label}
+            </Button>
           );
         })}
       </Flex>

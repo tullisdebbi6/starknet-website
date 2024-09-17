@@ -1,12 +1,4 @@
 items:
-  - title: Learn
-    columns:
-      - blocks:
-          - items:
-              - page: 93b845d7-5662-4cd4-8c13-3730440880c0
-              - page: 1dd72e46-c830-4a44-9bdf-d62b195b4c98
-              - custom_title: FAQ
-                page: b5689d3a-348b-4ccb-b787-520b64c55e41
   - title: Developers
     columns:
       - blocks:
@@ -26,38 +18,52 @@ items:
               - page: 4c40a102-df5b-4f39-98fb-774d6841da9e
                 custom_title: Tools & resources
               - custom_title: Developers blog
-                custom_internal_link: /posts/developers
+                custom_internal_link: /content/category/developers
+              - custom_title: Starknet Devs Newsletter
+                custom_internal_link: /subscribe-newsletter
+                custom_external_link: ""
+                page: ""
   - title: Ecosystem
     columns:
       - blocks:
           - title: ""
             items:
+              - custom_title: Bridge
+                custom_external_link: https://starkgate.starknet.io/
               - page: 0dc3d102-0936-433e-9219-f46e3087e396
               - page: d202009a-3541-4366-b664-36ef2e492aa3
               - page: 5ddb6717-0d91-4d20-a18e-5bc487d54b57
               - page: fd9c4d6e-aaee-42f0-abfc-ef5ffd3944ab
               - page: 9308fd57-e090-4ca9-9581-d9aeb8a3187c
               - custom_title: Security & audits
-                custom_internal_link: ""
+                custom_internal_link: security-and-audit-tools
+              - custom_title: Grants Program
+                custom_internal_link: ecosystem/grant
                 page: af68f1f8-b2a3-49e2-bec0-f36165cc331f
+              - custom_external_link: https://status.starknet.io/
+                custom_icon: ""
+                custom_title: Starknet Status Page
   - title: Community
     columns:
       - blocks:
           - title: START HERE
             items:
-              - custom_title: Community Hub
-                page: 683db5f6-c625-4fe0-a2af-3c5b6af8c2c9
+              - custom_title: Explore Starknet
+                page: 186916c3-0c7c-48a6-b717-e43d3a7377f4
+          - title: Provisions Program
+            items:
+              - custom_title: Provisions Portal
+                custom_external_link: https://provisions.starknet.io/
+              - custom_title: Provisions Program Plan
+                post: 96c92de7-03ae-4213-982a-c829015038b0
           - title: GET INVOLVED
             items:
               - custom_internal_link: /events
                 custom_title: Events
               - custom_internal_link: /jobs
                 custom_title: Ecosystem jobs
-              - page: 3a3c4592-f9a7-4ccc-b672-50ea6a4ab2b3
-                custom_title: Governance
-              - custom_internal_link: ""
-                custom_title: Ambassador program
-                page: 5ecdf9cf-d433-478a-a280-07e0f860534f
+              - custom_title: Governance
+                custom_external_link: https://governance.starknet.io/
               - custom_title: Community forum
                 custom_external_link: https://community.starknet.io/
               - page: d4d04818-2330-4c35-a33e-0f2bc3ca7e8f
@@ -73,7 +79,7 @@ items:
                 custom_external_link: https://starknet.io/discord
               - custom_title: GitHub
                 custom_icon: SiGithub
-                custom_external_link: https://github.com/starknet-io/starknet-website
+                custom_external_link: https://github.com/keep-starknet-strange/awesome-starknet
               - custom_title: Twitter
                 custom_icon: SiTwitter
                 custom_internal_link: ""
@@ -81,43 +87,13 @@ items:
   - title: Resources
     columns:
       - blocks:
-          - title: Content
+          - title: ""
             items:
-              - custom_internal_link: /posts/
-                custom_title: All blog posts
-              - custom_title: Community & events
-                custom_internal_link: /posts/events-and-webinars
-                hide_from_footer: true
-              - custom_title: Community calls
-                custom_internal_link: /posts/community-calls
-                hide_from_footer: true
-              - custom_title: Ecosystem
-                hide_from_footer: true
-                custom_internal_link: /posts/ecosystem
-              - custom_title: Developers
-                custom_internal_link: /posts/developers
-                hide_from_footer: true
-              - custom_title: Foundation
-                custom_internal_link: /posts/foundation
-                hide_from_footer: true
-              - custom_title: Governance
-                custom_internal_link: /posts/governance
-                hide_from_footer: true
-              - custom_title: Tutorials & guides
-                custom_internal_link: /posts/tutorials-and-guides
-                hide_from_footer: true
-              - custom_title: STARK Struck Podcast
-                custom_internal_link: /posts/stark-struck-podcast
-                hide_from_footer: true
-      - blocks:
-          - title: OTHER
-            items:
+              - custom_internal_link: /content/
+                custom_title: All content
+              - custom_internal_link: /starknet-frequently-asked-questions
+                custom_title: FAQs
+              - custom_internal_link: /glossary
+                custom_title: Glossary
               - custom_title: Media kit
                 page: 575c22e7-477f-4a7e-9b90-7406b802176f
-              - custom_title: Starknet EDU newsletter
-                custom_external_link: https://starknet.substack.com/
-              - custom_title: Starknet research hub
-                custom_external_link: https://starknet-research.beehiiv.com/
-              - custom_title: Starknet Edu Blog
-                custom_external_link: https://medium.com/starknet-edu
-                hide_from_footer: true

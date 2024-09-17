@@ -4,17 +4,19 @@ title: "Getting Started Using Starknet: Setting Up a Starknet Wallet"
 toc: true
 published_date: 2023-08-17T06:57:33.268Z
 image: /assets/getting-started.png
-category: stark-math
+category:
+  - stark-math
+  - 3fe387e2-1fb6-41b9-bb74-96d6df394f42
 topic:
   - ca272092-827b-4603-a3a6-b0fdbbc624ad
+  - e0c85dbe-08f9-4a19-a8b0-e99852c84cb5
 short_desc: >
   A gentle hand-holding guide for your first steps using Starknet and learning
   how to set up a Starknet wallet and transfer funds from an Ethereum wallet.  
+post_desc: A gentle hand-holding guide for your first steps using Starknet
 blocks:
   - type: group
     blocks:
-      - type: markdown
-        body: "##### A gentle hand-holding guide for your first steps using Starknet"
       - type: markdown
         body: >-
           ## Background
@@ -78,7 +80,7 @@ blocks:
           Once you have an Ethereum wallet with some ETH, you can install and set up a Starknet wallet.
 
 
-          See the up-to-date list of available [Starknet wallets](https://www.starknet.io/en/ecosystem/wallets) on the Starknet site. For more information on a specific wallet, including installation instructions, see that wallet’s site*.* Whichever one you choose, *make sure that you install it as a browser extension*. 
+          See the up-to-date list of available [Starknet wallets](https://www.starknet.io/en/ecosystem/wallets) on the Starknet site. For more information on a specific wallet, including installation instructions, see that wallet’s site. Whichever one you choose,  *make sure that you install it as a browser extension*. 
 
 
           In this blog post, I used wallets by [Braavos](https://braavos.app/) and [Argent](https://www.argent.xyz/argent-x/).
@@ -124,14 +126,9 @@ blocks:
 
           7. StarkGate lets you select from several different types of tokens. This example uses the default token, ETH. Check that the available balance in your Ethereum wallet is enough to transfer funds and pay for the gas required to transfer the funds.
 
-
           8. Enter the amount of ETH you want to transfer.\
-
-          Your Ethereum wallet prompts you to confirm the transfer. Your wallet might also show you the estimated transaction cost. For example, MetaMask shows approximately how much gas is required to execute the transfer, as well as the cost of the required gas in ETH and USD.
-
-
+             Your Ethereum wallet prompts you to confirm the transfer. Your wallet might also show you the estimated transaction cost. For example, MetaMask shows approximately how much gas is required to execute the transfer, as well as the cost of the required gas in ETH and USD.
           9. Confirm the transfer in your Ethereum wallet.
-
 
           10. StarkGate confirms the transaction and displays its status, including links to Etherscan and StarkScan, so you can view the transaction on both Ethereum and Starknet:
 
@@ -143,6 +140,38 @@ blocks:
 
 
           ![](https://starkware.co/wp-content/uploads/2023/08/9-StarkGate_updated_bals-300x190.png)
+
+
+          ## Swapping ETH for another token using JediSwap
+
+
+          JediSwap is a community-driven Automated Market Maker (AMM) on Starknet that enables you to swap one type of token for another. The JediSwap documentation provides information on swapping and on adding liquidity. This procedure demonstrates swapping ETH for WBTC.
+
+
+          #### Procedure
+
+
+          1. Go to JediSwap at <https://app.jediswap.xyz>.
+
+          2. Connect your wallet by clicking **Connect Wallet** and then selecting your Starknet wallet.
+
+
+          ![](https://starkware.co/wp-content/uploads/2023/08/10-JediSwap_Connect_button-300x58.png)
+
+
+          3. When your wallet prompts you to approve the connection, click **Approve**.\
+             Once JediSwap connects to your wallet, it shows your balance in each token that it supports. For example, my wallet has about 0.05 ETH.
+
+          ![](https://starkware.co/wp-content/uploads/2023/08/11-JediSwap_ETH_balance-300x85.png)
+
+
+          4. Select the tokens that you want to swap in **Swap From** and **Swap To (est.)**, and click **Swap**. I swapped 0.025 ETH for WBTC.
+
+          5. Your wallet prompts you to sign the transaction by clicking **Sign**. Clicking **Sign** submits the transaction
+
+          6. JediSwap shows Transaction Submitted. Click **Open in browser** to view the transaction on StarkScan.
+
+          7. Open your wallet to see your balance and the assets that you own. For example, this is my Braavos wallet after the swap:
 
 
           ## Using MetaMask as a Starknet wallet
@@ -175,24 +204,13 @@ blocks:
 
           6. After reading everything on this page, click **Install**.![](https://starkware.co/wp-content/uploads/2023/08/MetaMask_Install_Snap-165x300.png)
 
-          7. Click **Confirm** to proceed with caution.![](https://starkware.co/wp-content/uploads/2023/08/MetMask_proceed_with_caution-240x300.png)
+          7. Click **Confirm** to proceed with caution.![](https://starkware.co/wp-content/uploads/2023/08/MetMask_proceed_with_caution-240x300.png) After the installation finishes, this message appears: **Installation completed successfully**.
 
 
-          After the installation finishes, this message appears: **Installation completed successfully**.
+          8. Click the URL to open the Snap.![](https://starkware.co/wp-content/uploads/2023/08/MetaMask_installation_complete-300x255.png)A message prompts you to connect your wallet.
 
 
-          8. Click the URL to open the Snap.
-
-
-          ![](https://starkware.co/wp-content/uploads/2023/08/MetaMask_installation_complete-300x255.png)\
-
-          A message prompts you to connect your wallet.
-
-
-          9. Click **Connect**. A screen appears showing your new Starknet account address and your wallet balance.
-
-
-          ![](https://starkware.co/wp-content/uploads/2023/08/MetaMask_acct_balance-300x216.png)
+          9. Click **Connect**. A screen appears showing your new Starknet account address and your wallet balance.![](https://starkware.co/wp-content/uploads/2023/08/MetaMask_acct_balance-300x216.png)
 
 
           Now you need to fund your wallet. StarkGate should have support soon, but at the moment, to fund your wallet, you must receive L2 funds from another Starknet wallet or use the onramp service [Ramp](https://ramp.network/buy) with a credit card, to fund it.
@@ -201,43 +219,39 @@ blocks:
           Once you have funds in your wallet, you can send funds to another Starknet address. Like I said, more features are coming soon.
 
 
-          ## Swapping ETH for another token using JediSwap
+          ## Using STRK Tokens with MetaMask’s Starknet Snap
 
 
-          JediSwap is a community-driven Automated Market Maker (AMM) on Starknet that enables you to swap one type of token for another. The JediSwap documentation provides information on swapping and on adding liquidity. This procedure demonstrates swapping ETH for WBTC.
+          **To check if your (potentially undeployed) MM Snaps wallet has STRK tokens:**
 
 
-          #### Procedure
+          1. Go to https://starkscan.co/contract/<wallet address>, where <wallet address> is your wallet’s address, and click **Portfolio**. You should see the wallet’s balances.
 
+             ![Starkscan showing positive STRK balance](/assets/1_starkscan.png)
+          2. Open MetaMask and open Snaps: Click the three vertical dots to open the menu, and then **Snaps > Starknet**. Then click the URL <https://snaps.consensys.io/starknet>. The Starknet snap opens.
 
-          1. Go to JediSwap at <https://app.jediswap.xyz>.
+          3. Click **(+) ADD TOKEN**, and the **Add Token** screen opens.
 
+             ![Snap before adding STRK token](/assets/3_snap_before_adding.png)
+          4. Fill in the following details:\
+                     **ContractAddress:** `0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d`\
+                     **Name:**`Starknet Token`\
+                     **Symbol:** `STRK`\
+                     **Decimal:** `18`
 
-          2. Connect your wallet by clicking **Connect Wallet** and then selecting your Starknet wallet.
+             ![Add STRK token support to MetaMask Starknet snap](/assets/4_add_this_token.png)
 
+          5. Approve the request in MetaMask. 
 
-          ![](https://starkware.co/wp-content/uploads/2023/08/10-JediSwap_Connect_button-300x58.png) 
+                 
+          6. You should now see the Starknet token STRK in the list of tokens in the Snap.![STRK is added to MetaMask Starknet snap](/assets/6_strk_is_added.png)
 
+          7. Currently, you can pay fees in STRK with the MetaMask Snap. You need to first transfer a small amount of ETH to the Snap’s wallet to pay for deploying the account and sending the STRK. You can send ETH to the wallet even before you have deployed it.
 
-          3. When your wallet prompts you to approve the connection, click **Approve**.\
+              ![ETH balance in Starknet wallet](/assets/7_eth_balance.png)
+          8. Once you have some ETH, you can send the STRK from the account. 
 
-          Once JediSwap connects to your wallet, it shows your balance in each token that it supports. For example, my wallet has about 0.05 ETH.
-
-
-          ![](https://starkware.co/wp-content/uploads/2023/08/11-JediSwap_ETH_balance-300x85.png)
-
-
-          4. Select the tokens that you want to swap in **Swap From** and **Swap To (est.)**, and click **Swap**. I swapped 0.025 ETH for WBTC.
-
-
-          5. Your wallet prompts you to sign the transaction by clicking **Sign**. Clicking **Sign** submits the transaction
-
-
-          6. JediSwap shows Transaction Submitted. Click **Open in browser** to view the transaction on StarkScan.
-
-
-          7. Open your wallet to see your balance and the assets that you own. For example, this is my Braavos wallet after the swap:
-
+             **NOTE:** There might be a bug in Snaps where after transferring ETH to the account, the balance of the STRK tokens appears 0 instead of the actual amount. In this case, redo the steps to add the STRK token as described above.
 
           ## What now?
 

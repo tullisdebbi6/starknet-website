@@ -1,5 +1,5 @@
 id: fd9c4d6e-aaee-42f0-abfc-ef5ffd3944ab
-title: Block explorers & indexers
+title: Block explorers, indexers & Enhanced API
 template: landing
 parent_page: /ecosystem/
 breadcrumbs: false
@@ -7,8 +7,22 @@ page_last_updated: true
 blocks:
   - type: hero
     variant: block_explorers
-    title: Block explorers, indexers & Enhanced API 
+    title: Block explorers, indexers & Enhanced API
     description: Explore blocks, indexers, and other metrics of Starknet transactions.
+  - type: card_list
+    randomize: false
+    title: Monitoring Tools
+    card_list_items:
+      - title: Starknet Status
+        description: Starknet status provides timely status information about the health
+          of Starknet sequencing.
+        image: /assets/sn-symbol-gradient.png
+        website_url: https://status.starknet.io/
+      - title: Starknet Monitor
+        description: Starknet Monitor shows vital statistics about Starknet and core
+          infrastructure.
+        image: /assets/logo-square.png
+        website_url: https://www.starknet-monitor.com/
   - type: card_list
     card_list_items:
       - title: Starkscan
@@ -39,8 +53,19 @@ blocks:
         image: /assets/oklink-logo.jpeg
         discord: ""
         twitter: https://twitter.com/OKLink
+      - description: Seamlessly explore any NFT data on the Starknet via Starknet NFTScan.
+        website_url: https://starknet.nftscan.com/
+        title: NFTScan - NFT explorer
+        image: /assets/400_400.png
+        twitter: https://twitter.com/nftscan_com
+        discord: https://discord.gg/nftscan
+      - title: Stark Compass
+        description: An open-source Starknet explorer.
+        twitter: https://twitter.com/starkcompass
+        image: /assets/stark-compass.jpg
+        website_url: https://starkcompass.com/
     title: Block explorers
-    randomize: true
+    randomize: false
   - type: card_list
     randomize: true
     title: Indexers
@@ -60,6 +85,20 @@ blocks:
         title: Token Flow
         image: /assets/token-flow-logo.jpg
         website_url: https://tokenflow.live/
+      - title: Footprint Analytics
+        description: Footprint Analytics is a data platform blending web2 and web3 data
+          with abstractions.
+        image: /assets/5336301-180.png
+        website_url: https://www.footprint.network/research/chain/chain-stats/starknet-overview?series_date-80244=past90days
+        twitter: https://twitter.com/Footprint_Data
+        discord: https://discord.gg/3HYaR6USM7
+      - title: DipDup
+        description: DipDup is an open-source indexing stack, providing GraphQL access
+          to  decoded on-chain data, NFT balances & transfers, and app-specific
+          collections.
+        twitter: https://twitter.com/dipdup_io
+        website_url: https://dipdup.io/
+        image: /assets/photo_2024-03-24-18.14.02.jpeg
   - type: card_list
     randomize: true
     title: Enhanced API
@@ -67,8 +106,26 @@ blocks:
       - website_url: https://starkscan.co/api-info
         image: /assets/starkscan.jpg
         title: Starkscan
+        description: Get Starknet data via the Starkscan REST API. Leverage the power of
+          a leading Starknet block explorer in your apps.
+        twitter: https://twitter.com/StarkscanCo
       - website_url: https://docs.alchemy.com/reference/starknet-api-endpoints#nft-api
         title: "Alchemy "
         image: /assets/alchemy-mark-blue-gradient.png
         description: Get all the Starknet data you need for transactions, token
           information, and debugging, in fewer requests.
+        twitter: https://twitter.com/AlchemyPlatform
+      - title: NFTScan
+        description: Leverage NFTScan's feature-rich NFT APIs for your projects.
+        website_url: https://developer.nftscan.com/
+        discord: https://discord.gg/nftscan
+        image: /assets/400_400.png
+        twitter: https://twitter.com/nftscan_com
+      - title: ArkProject
+        description: "Crosschain Infrastructure for Digital Assets Exchange: Appchain
+          Orderbook, Starknet NFT API, NFT Indexer, Starknet NFT Bridge."
+        twitter: https://twitter.com/ArkProjectNFTs
+        website_url: https://www.arkproject.dev/
+        image: /assets/arkproject_square.png
+    description: An enhanced API is a set of tools designed to simplify developers’
+      access to complex queries on Starknet data.

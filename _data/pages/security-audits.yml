@@ -1,5 +1,7 @@
 id: af68f1f8-b2a3-49e2-bec0-f36165cc331f
-title: Security & audits
+title: Security & Audit Tools
+seoTitle: Security Services and Tools For Starknet Smart Contracts
+seoDescription: Secure your apps with security services and tools for Starknet smart contracts.
 template: landing
 parent_page: /ecosystem/
 breadcrumbs: false
@@ -7,11 +9,11 @@ page_last_updated: true
 blocks:
   - type: hero
     variant: security
-    title: Security & audits
+    title: Security & Audit Tools
     description: Secure your apps with auditing services for Starknet Smart Contracts.
   - type: card_list
     randomize: true
-    title: Auditing Companies
+    title: Auditing Tools
     card_list_items:
       - title: ABDK
         website_url: https://www.abdk.consulting/
@@ -30,7 +32,7 @@ blocks:
           security tooling for smart contract developers, auditors and web3
           protocols.
       - title: Nethermind Security
-        website_url: https://nethermind.io/smart-contracts-audits/
+        website_url: https://www.nethermind.io/smart-contract-audits
         image: /assets/nethermind_security_ico.png
         description: Nethermind Security is the security arm of Nethermind, providing
           services related to Smart Contract Audits, Formal Verification, and
@@ -55,6 +57,45 @@ blocks:
           Web3 / ZKP companies.
         link_url: https://security.extropy.io/
         image: /assets/extropy-logoi.jpeg
+      - description: Beosin provides one-stop blockchain security solutions for projects
+          on Starknet including security audit, on-chain risk monitoring and
+          alert.
+        title: Beosin
+        image: /assets/beosin-logo.jpg
+        website_url: https://beosin.com/
+        twitter: https://x.com/Beosin_com
+        discord: https://discord.com/invite/DBBcJN4atM
+      - title: OtterSec
+        website_url: https://osec.io/
+        twitter: https://twitter.com/osec_io
+        description: OtterSec is a blockchain security company with a holistic and
+          collaborative approach to identifying and patching critical exploits
+          for clients before they go to market.
+        image: /assets/ottersec-logo.jpg
+      - description: Zellic is a security research firm with deep expertise in
+          blockchain security and cryptography, led by the best hackers in the
+          world.
+        title: Zellic
+        image: /assets/zellic_telegram-badge_hexagon-1.png
+        twitter: https://twitter.com/zellic_io
+        website_url: https://www.zellic.io/
+      - title: Cairo Security Clan
+        description: Most talented Starknet auditors united to secure the Starknet
+          ecosystem.
+        image: /assets/img_7042.png
+        website_url: https://cairosecurityclan.com/
+        twitter: https://twitter.com/cairoaudit
+  - type: card_list
+    randomize: false
+    title: Security and Risk Prevention Tool
+    card_list_items:
+      - title: Hypernative
+        description: Hypernative is a real time security and risk prevention platform
+          that helps protocols, chains and asset managers detect hacks/exploits
+          or other custom risk before they happen.
+        website_url: https://www.hypernative.io/
+        twitter: https://twitter.com/HypernativeLabs
+        image: /assets/photo_2024-04-25-13.51.41.jpeg
   - type: card_list
     randomize: true
     title: Bug Bounty Program
